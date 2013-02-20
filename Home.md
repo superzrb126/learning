@@ -1,4 +1,4 @@
-## Quick Install
+## Quick Install on Linux
 
 Assuming root on Ubuntu 12.10 you can just run:
 
