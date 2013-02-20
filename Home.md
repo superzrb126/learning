@@ -11,4 +11,4 @@ As you can see by inspecting the URL, this will:
 1. Install client and server into /usr/local/bin
 1. Create simple Upstart script if one does not exist
 1. Start the server
-1. Pull in public base image (Ubuntu Quantal) if no image named "base"
+1. Pull in public base image (Ubuntu Quantal) if no image exists named "base"
