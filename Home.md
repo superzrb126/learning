@@ -2,7 +2,7 @@
 
 Assuming root on Ubuntu 12.10 you can just run:
 
-    curl -Ls http://j.mp/docker-quickstart | bash
+    curl -Ls http://j.mp/install-docker | bash
 
 As you can see by inspecting the URL, this will:
 
@@ -11,4 +11,7 @@ As you can see by inspecting the URL, this will:
 1. Install client and server into /usr/local/bin
 1. Create simple Upstart script if one does not exist
 1. Start the server
-1. Pull in public base image (Ubuntu Quantal) if no image exists named "base"
+
+You have no images to bootstrap a container from, but you can download a public base image of Ubuntu 12.10 easily with:
+
+    docker pull -j base
