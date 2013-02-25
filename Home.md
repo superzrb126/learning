@@ -2,7 +2,7 @@
 
 Assuming root on Ubuntu 12.10 you can just run:
 
-    curl -Ls http://j.mp/install-docker | bash
+    curl -Ls https://raw.github.com/dotcloud/docker/master/install.sh | bash
 
 As you can see by inspecting the URL, this will:
 
