@@ -14,4 +14,4 @@ As you can see by inspecting the URL, this will:
 
 You have no images to bootstrap a container from, but you can download a public base image of Ubuntu 12.10 easily with:
 
-    docker pull -j base
+    docker pull base
