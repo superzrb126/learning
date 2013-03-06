@@ -98,3 +98,27 @@ Commands:
     attach    Attach to a running container
 ```
     
+## Proof of concept: building a python web app
+
+```bash
+$ docker pull shykes/pybuilder
+
+$ BUILD_JOB=$(docker run -t  shykes/pybuilder /usr/local/bin/buildapp http://github.com/shykes/helloflask/archive/master.tar.gz)
+
+$ docker attach $BUILD_JOB
+[...]
+
+$ BUILD_IMG=$(docker commit $BUILD_JOB _/builds/github.coms/hykes/helloflask/master)
+
+$ WEB_1=$(docker run -p 5000 $BUILD_IMG /usr/local/bin/runapp)
+$ WEB_2=$(docker run -p 5000 $BUILD_IMG /usr/local/bin/runapp)
+
+$ docker logs $WEB_1
+ * Running on http://0.0.0.0:5000/
+
+$ docker logs $WEB_2
+ * Running on http://0.0.0.0:5000/
+
+
+
+```
