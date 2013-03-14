@@ -4,6 +4,11 @@
   cd docker
   git checkout packaging
   make deb
+  cd ..
+  sudo dpkg -i docker-dev_1_amd64.deb
+  
+  # You might need to install dependencies with
+  sudo apt-get install -f
 
 Once launchpad is up, add to /etc/apt/sources.list ::
 
