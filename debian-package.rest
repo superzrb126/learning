@@ -4,3 +4,7 @@
   cd docker
   git checkout packaging
   make deb
+
+Once launchpad is up, add to /etc/apt/sources.list::
+
+  deb http://ppa.launchpad.net/noise+ppa/docker-dev/ubuntu precise main
