@@ -101,7 +101,7 @@ Commands:
 ## Proof of concept: building a python web app
 
 ```bash
-$ docker pull shykes/pybuilder
+$ docker import shykes/pybuilder
 
 $ URL=http://github.com/shykes/helloflask/archive/master.tar.gz
 $ BUILD_JOB=$(docker run -t shykes/pybuilder:11d4f58638a72935 /usr/local/bin/buildapp $URL)
