@@ -19,6 +19,7 @@ You have no images to bootstrap a container from, but you can download a public 
 
 Vagrant Usage
 -------------
+Assuming you are in a directory with the docker sources. (e.g. by git clone this repo).
 
 1. Install Vagrant from http://vagrantup.com
 2. Run `vagrant up`. This will take a few minutes as it does the following:
