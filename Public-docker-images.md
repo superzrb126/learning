@@ -25,6 +25,18 @@ docker pull centos
 
 ## Unofficial images
 
+### Gentoo base image
+
+(Available somewhere, can't remember where)
+
+### Arch Linux base image
+
+(Available somewhere, can't remember where)
+
+### Debian Squeeze base image
+
+Not available, maintainer wanted!
+
 
 ### Redis
 
