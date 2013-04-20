@@ -46,6 +46,14 @@ http://redis.io
 docker run -p 6379 shykes/redis redis-server
 ```
 
+### ZNC irc bouncer
+
+```
+docker run -p 6667 -u irc shykes/znc zncrun
+```
+
+Source code available at http://github.com/shykes/docker-znc
+
 ### Dockerbuilder
 
 Build and upload binary releases of docker
