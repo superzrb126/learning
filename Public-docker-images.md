@@ -42,4 +42,14 @@ Build and upload binary releases of docker
 docker run shykes/dockerbuilder dockerbuilder REVISION S3_ID S3_KEY
 ```
 
+### Python app builder
+
+Build a python web app. Source code is at http://github.com/shykes/pybuilder
+
+```
+BUILD_JOB=$(docker run -d shykes/pybuilder buildapp http://github.com/shykes/helloflask/archive/master.tar.gz)
+docker wait $BUILD_JOB
+BUILD_IMAGE=$(docker commit $BUILD_JOB)
+docker run -p 5000 $BUILD_IMAGE runapp
+```
 
