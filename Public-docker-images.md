@@ -78,3 +78,13 @@ docker wait $BUILD_JOB
 BUILD_IMAGE=$(docker commit $BUILD_JOB)
 docker run -p 5000 $BUILD_IMAGE runapp
 ```
+
+### NodeJS + OpenCV
+
+A ready-to-use build of the [OpenCV library](http://opencv.org) including [NodeJS 0.8 bindings](https://github.com/peterbraden/node-opencv/).
+
+```
+docker run shykes/opencv node -e 'console.log(require("opencv").version)'
+```
+
+
