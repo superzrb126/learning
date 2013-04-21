@@ -42,8 +42,10 @@ Not available, maintainer wanted!
 
 http://redis.io
 
+See @johncosta 's [awesome blog post](http://www.johnmcostaiii.net/2013/installing-redis-on-docker/).
+
 ```
-docker run -p 6379 shykes/redis redis-server
+docker run -p 6379 johncosta/redis redis-server
 ```
 
 ### ZNC irc bouncer
