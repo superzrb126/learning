@@ -84,7 +84,7 @@ docker run -p 5000 $BUILD_IMAGE runapp
 A ready-to-use build of the [OpenCV library](http://opencv.org) including [NodeJS 0.8 bindings](https://github.com/peterbraden/node-opencv/).
 
 ```
-docker run shykes/opencv node -e 'console.log(require("opencv").version)'
+docker run shykes/node-opencv node -e 'console.log(require("opencv").version)'
 ```
 
 
