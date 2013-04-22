@@ -2,7 +2,9 @@
 
 ## Official images
 
-### All images from the Ubuntu repository (try this if you get a 404 error for an individual Ubuntu image)
+### All images from the Ubuntu repository
+(try this if you get a 404 error for an individual Ubuntu image)
+
 ```
 docker pull ubuntu
 ```
