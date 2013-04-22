@@ -2,6 +2,11 @@
 
 ## Official images
 
+### All images from the Ubuntu repository (try this if you get a 494 for an individual Ubuntu image)
+```
+docker pull ubuntu
+```
+
 ### Ubuntu 12.10 Quantal base image
 
 ```
@@ -86,5 +91,4 @@ A ready-to-use build of the [OpenCV library](http://opencv.org) including [NodeJ
 ```
 docker run shykes/node-opencv node -e 'console.log(require("opencv").version)'
 ```
-
 
