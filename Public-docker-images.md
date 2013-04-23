@@ -38,7 +38,7 @@ docker pull centos
 docker pull tianon/gentoo
 ```
 
-Note that this image is currently not functional due to some minor changes in docker that switched from using `ifconfig` to `ip` inside the image (and that existing image is merely a faithful copy of the stage3 tarball; see also [#313](https://github.com/dotcloud/docker/issues/313#issuecomment-15883754)).
+Note that this image is somewhat limited, being that it is simply a faithful copy of the stage3 tarball (see also [#313](https://github.com/dotcloud/docker/issues/313#issuecomment-15883754)).  Including a copy of the portage tree would increase the image size by an appreciable amount, and would become stale quickly.
 
 ### Arch Linux base image
 
