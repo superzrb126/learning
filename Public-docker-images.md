@@ -31,6 +31,13 @@ Thanks to @backjlack
 docker pull centos
 ```
 
+### Busybox base image
+
+
+```
+docker pull busybox
+```
+
 
 ## Unofficial images
 
