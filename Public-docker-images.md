@@ -25,6 +25,8 @@ docker pull ubuntu:12.04
 
 ### Centos 6.4 base image
 
+Thanks to @backjlack
+
 ```
 docker pull centos
 ```
