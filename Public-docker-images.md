@@ -75,6 +75,16 @@ See @johncosta 's [awesome blog post](http://www.johnmcostaiii.net/2013/installi
 docker run -p 6379 johncosta/redis redis-server
 ```
 
+### Memcached
+
+http://memcached.org/
+
+See this [article](http://www.slideshare.net/julienbarbier42/memcached-as-a-service-using-docker).
+
+```
+docker run -p 11211 jbarbier/memcached memcached -u daemon
+```
+
 ### ZNC irc bouncer
 
 ```
