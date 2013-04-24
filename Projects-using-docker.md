@@ -9,9 +9,10 @@ This page lists projects and interesting material that use docker. Some of them 
 * [tsuru docker provider](https://github.com/isaiah/tsuru_service)
 * [docker and nginx chef cookbook](https://github.com/gleicon/docker-cookbook)
 * [docker cookbook](https://github.com/thoward/docker-cookbook)
+* [Multi-tenant, API-provisionable memcached cloud service example](https://github.com/jbarbier/SaaS_Memcached)
 
 ## Presentations and blog posts
 
-* [Memcached as a Service](www.slideshare.net/julienbarbier42/memcached-as-a-service-using-docker)
+* [Memcached as a Service](http://www.slideshare.net/julienbarbier42/memcached-as-a-service-using-docker)
 * [The future of linux containers - docker at pycon 2013](http://pyvideo.org/video/1852/the-future-of-linux-containers)
 * [Installing Redis on Docker](http://www.johnmcostaiii.net/2013/installing-redis-on-docker/)
