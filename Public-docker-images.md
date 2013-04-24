@@ -55,7 +55,9 @@ Note that this image is somewhat limited, being that it is simply a faithful cop
 
 ### Debian Squeeze base image
 
-Not available, maintainer wanted!
+```
+docker pull tianon/debian:squeeze
+```
 
 ### Debian Wheezy base image
 
