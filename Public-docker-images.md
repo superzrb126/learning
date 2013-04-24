@@ -57,6 +57,11 @@ Note that this image is somewhat limited, being that it is simply a faithful cop
 
 Not available, maintainer wanted!
 
+### Debian Wheezy base image
+
+```
+docker pull tianon/debian:wheezy
+```
 
 ### Redis
 
@@ -102,4 +107,3 @@ A ready-to-use build of the [OpenCV library](http://opencv.org) including [NodeJ
 ```
 docker run shykes/node-opencv node -e 'console.log(require("opencv").version)'
 ```
-
