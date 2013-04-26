@@ -53,16 +53,21 @@ Note that this image is somewhat limited, being that it is simply a faithful cop
 
 (Available somewhere, can't remember where)
 
-### Debian Squeeze base image
+### Debian base images
 
+#### Squeeze
 ```
 docker pull tianon/debian:squeeze
 ```
 
-### Debian Wheezy base image
-
+#### Wheezy
 ```
 docker pull tianon/debian:wheezy
+```
+
+#### Sid
+```
+docker pull tianon/debian:sid
 ```
 
 ### Redis
