@@ -9,7 +9,8 @@ This page lists projects and interesting material that use docker. Some of them 
 * [tsuru docker provider](https://github.com/isaiah/tsuru_service)
 * [docker and nginx chef cookbook](https://github.com/gleicon/docker-cookbook)
 * [docker cookbook](https://github.com/thoward/docker-cookbook)
-* [Multi-tenant, API-provisionable memcached cloud service example](https://github.com/jbarbier/SaaS_Memcached)
+* [Multi-tenant, API-provisionable memcached cloud service example](https://github.com/jbarbier/SaaS_Memcached) - [http://memcachedasaservice.com/](http://memcachedasaservice.com/)
+* [NodeJS OpenCV bindings w/ all deps](https://github.com/peterbraden/node-opencv)
 
 ## Presentations and blog posts
 
