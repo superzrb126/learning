@@ -55,7 +55,9 @@ Note that this image is somewhat limited, being that it is simply a faithful cop
 
 ### Debian base images
 
-#### Squeeze (stable)
+#### Standard images
+
+##### Squeeze (stable)
 ```
 docker pull tianon/debian:squeeze
 ```
@@ -64,7 +66,7 @@ or
 docker pull tianon/debian:6.0.7
 ```
 
-#### Wheezy (testing)
+##### Wheezy (testing)
 ```
 docker pull tianon/debian:wheezy
 ```
@@ -73,9 +75,34 @@ or
 docker pull tianon/debian:7.0
 ```
 
-#### Sid (unstable)
+##### Sid (unstable)
 ```
 docker pull tianon/debian:sid
+```
+
+#### Rolling release images
+
+##### Stable
+```
+docker pull tianon/debian-roll:stable
+```
+or
+```
+docker pull tianon/debian-roll:6.0.7
+```
+
+##### Testing
+```
+docker pull tianon/debian-roll:testing
+```
+or
+```
+docker pull tianon/debian-roll:7.0
+```
+
+##### Unstable
+```
+docker pull tianon/debian-roll:unstable
 ```
 
 ### Redis
