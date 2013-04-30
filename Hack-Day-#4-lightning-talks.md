@@ -6,8 +6,8 @@ Bad lightning talk topics: things unrelated to docker.
 
 Lightning talks start at 7:30pm
 
-* Solomon Hykes, Docker roadmap
-* Thatcher Peskens, A sneak peek at the public docker index
-* Louis Opter, Building dotCloud applications with Docker
-* Steeve Morin, Building a complex video processing app with Docker
+* *Solomon Hykes*, Docker roadmap
+* *Thatcher Peskens*, A sneak peek at the public docker index
+* *Louis Opter*, Building dotCloud applications with Docker
+* *Steeve Morin*, Building a complex video processing app with Docker
 * ?
