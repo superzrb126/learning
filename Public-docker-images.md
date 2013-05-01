@@ -125,6 +125,16 @@ docker run -d -p 5984 shykes/couchdb /bin/sh -e /usr/bin/couchdb -a /etc/couchdb
 
 Container source available at http://github.com/shykes/couchdb
 
+### PostgreSQL
+
+http://www.postgresql.org/
+
+```
+docker run -p 5432 jpetazzo/pgsql /init YourSecretPassword
+```
+This will provision a PostgreSQL container, and create a `root` user with password `YourSecretPassword`.
+
+Container source available at https://gist.github.com/jpetazzo/5494158
 
 ### Memcached
 
