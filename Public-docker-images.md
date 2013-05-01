@@ -152,6 +152,17 @@ The redis-server is spawned inside the same container on purpose. Current Hipach
 
 Container source is available in the Hipache's repos: https://github.com/dotcloud/hipache/blob/master/Dockerfile
 
+### Firefox/VNC
+
+```
+docker run -d -p 5900 creack/firefox-vnc x11vnc -forever -usepw -create
+```
+
+This will launch a VNC server and when a client connects to it, it starts Firefox.
+The default password is `1234`
+
+Container source available at http://github.com/creack/docker-firefox/
+
 
 ### Memcached
 
