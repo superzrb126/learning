@@ -10,4 +10,5 @@ Lightning talks start at 7:30pm
 * *Thatcher Peskens*, A sneak peek at the public docker index
 * *Louis Opter*, Building dotCloud applications with Docker
 * *Steeve Morin*, Building a complex video processing app with Docker
+* *David Nghiem*, Building an Ubuntu Docker image with debootstrap
 * ?
