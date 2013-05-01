@@ -115,6 +115,17 @@ See @johncosta 's [awesome blog post](http://www.johnmcostaiii.net/2013/installi
 docker run -p 6379 johncosta/redis redis-server
 ```
 
+### Apache CouchDB
+
+[Couchdb](http://github.com/apache/couchdb) is "an open source database that focuses on ease of use and on being a database that completely embraces the web".
+
+```
+docker run -d -p 5984 shykes/couchdb /bin/sh -e /usr/bin/couchdb -a /etc/couchdb/default.ini -a /etc/couchdb/local.ini -b -r 5 -p /var/run/couchdb/couchdb.pid -o /dev/null -e /dev/null -R
+```
+
+Container source available at http://github.com/shykes/couchdb
+
+
 ### Memcached
 
 http://memcached.org/
