@@ -125,6 +125,7 @@ docker run -d -p 5984 shykes/couchdb /bin/sh -e /usr/bin/couchdb -a /etc/couchdb
 
 Container source available at http://github.com/shykes/couchdb
 
+
 ### PostgreSQL
 
 http://www.postgresql.org/
@@ -135,6 +136,22 @@ docker run -p 5432 jpetazzo/pgsql /init YourSecretPassword
 This will provision a PostgreSQL container, and create a `root` user with password `YourSecretPassword`.
 
 Container source available at https://gist.github.com/jpetazzo/5494158
+
+
+### Hipache
+
+https://github.com/dotcloud/hipache
+
+```
+docker run -p :6379 -p :80 samalba/hipache supervisord -n
+```
+
+This will launch a supervisord in foreground which spawns an Hipache daemon (using the dev config, but easy to change) + redis-server.
+
+The redis-server is spawned inside the same container on purpose. Current Hipache's architecture does not share a Redis among several machines, but among several Hipache's workers in the same machine.
+
+Container source is available in the Hipache's repos: https://github.com/dotcloud/hipache/blob/master/Dockerfile
+
 
 ### Memcached
 
