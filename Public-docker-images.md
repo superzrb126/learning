@@ -16,7 +16,7 @@ docker pull ubuntu:12.10
 ```
 
 
-### Ubuntu 12.04 TLS Precise base image
+### Ubuntu 12.04 LTS Precise base image
 
 ```
 docker pull ubuntu:12.04
