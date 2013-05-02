@@ -53,6 +53,12 @@ Note that this image is somewhat limited, being that it is simply a faithful cop
 
 (Available somewhere, can't remember where)
 
+### openSUSE Linux base image
+
+```
+docker pull flavio/openSUSE_12.3
+```
+
 ### Debian base images
 
 #### Standard images
