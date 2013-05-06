@@ -110,7 +110,7 @@ http://redis.io
 See @johncosta 's [awesome blog post](http://www.johnmcostaiii.net/2013/installing-redis-on-docker/).
 
 ```
-docker run -p 6379 johncosta/redis redis-server
+docker run johncosta/redis
 ```
 
 ### Apache CouchDB
