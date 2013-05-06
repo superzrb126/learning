@@ -8,11 +8,11 @@ we're excited to announce the new version of Docker today. This version is reall
 
 You can now mark directories within a container as holding persistent data. This will cause the runtime to handle them differently. Specifically:
 
-* Changes to a data volume are not recorded as regular filesystem changes, and are not included in the container's top layer.
+* Changes to a data volume are not recorded as regular filesystem changes in the top layer, and will not be included at the next commit.
 
 * Changes to a data volume are made directly, without the overhead of a copy-on-write mechanism. This is good for very large files.
 
-* Data volumes can be shared between containers. See [the documentation](http://docs.docker.io/en/latest/examples/couchdb_data_volumes/) for an example.
+* Most importantly, data volumes can be shared and reused between containers. This is the feature that makes data volumes so powerful. You can use it for anything from hot database upgrades to custom backup or replication tools. See [the documentation](http://docs.docker.io/en/latest/examples/couchdb_data_volumes/) for an example.
 
 Using data volumes is as simple as adding a new flag:
 
