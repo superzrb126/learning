@@ -1,6 +1,9 @@
 Hi everyone,
 
-we're excited to announce the new version of Docker today. This version is really special since it brings support for the public Index allowing repository search.
+We're excited to announce the new version of Docker today. This version brings 3 highly demanded features: data volumes, a searchable index and the first open-source release of the docker registry!
+
+Let us know what you think! We're always available on irc.freenode.net #docker. Feel free to open an issue on Docker's main repository: https://github.com/dotcloud/docker.
+
 
 # CONTENTS
 
@@ -8,6 +11,16 @@ we're excited to announce the new version of Docker today. This version is reall
   * Data volumes
   * Searchable index
   * Open-source registry
+
+* What's next?
+  * Remote API
+  * Runtime API
+  * Build!
+
+* How you can help
+
+* Hack day on June 11
+
 
 # 0.3.0 summary
 
@@ -55,10 +68,6 @@ Now we can! The new registry API from the ground up to support decentralized mir
 
 
 The new registry is available at https://github.com/dotcloud/docker-registry
-
-## Feedback?
-
-We're always available on irc.freenode.net #docker. Feel free to open an issue on Docker's main repository: https://github.com/dotcloud/docker
 
 
 WHAT'S NEXT?
