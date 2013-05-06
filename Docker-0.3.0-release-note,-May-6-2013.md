@@ -119,7 +119,7 @@ define precisely, step-by-step, how to build my application and all
 its dependencies into a single container which can run anywhere. No
 more dependency hell, no more "works on my machine". I like to call
 that methodology "extreme vendoring", and it's pure awesome. Today it
-[still requires hacky contrib tools](https://github.com/dotcloud/docker/tree/v0.2.0/contrib/docker-build)
+[still requires hacky contrib tools](https://github.com/dotcloud/docker/tree/v0.3.0/contrib/docker-build)
  but we're going to pull it into docker.
 
 
