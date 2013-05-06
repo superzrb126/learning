@@ -1,6 +1,6 @@
 Hi everyone,
 
-We're excited to announce the new version of Docker today. This version brings 3 highly demanded features: data volumes, a searchable index and the first open-source release of the docker registry!
+Today we're excited to announce a new version of Docker. This version brings three highly demanded features: data volumes, a searchable index and the first open-source release of the docker registry!
 
 Let us know what you think! We're always available on irc.freenode.net #docker. Feel free to open an issue on Docker's main repository: https://github.com/dotcloud/docker.
 
