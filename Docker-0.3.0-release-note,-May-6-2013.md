@@ -36,11 +36,11 @@ Many of you have asked for a way to host layers in your own private registry. We
 
 There are 2 main use cases for the open-source registry:
 
-1) Private registry
+### Use case 1: private registry
 
 You shouldn't have to open-source your code to benefit from Docker - and Docker just isn't as cool without the registry. Now you can deploy your own private registry, and use it to share containers within your organization. For example, if you're building a "private PaaS" you could use the registry to store all application builds, ready to be 'docker pull'-ed from any server in your cluster.
 
-2) Public mirror
+### Use case 2: public mirror
 
 Even for layers shared by the community, there has been concern that the central registry might become a single point of failure. Wouldn't it be nice to have a mirror system, so that the burden of hosting all these layers can be decentralized, minimizing the impact of downtimes?
 
