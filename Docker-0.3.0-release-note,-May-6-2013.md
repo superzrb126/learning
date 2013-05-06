@@ -59,3 +59,127 @@ The new registry is available at https://github.com/dotcloud/docker-registry
 ## Feedback?
 
 We're always available on irc.freenode.net #docker. Feel free to open an issue on Docker's main repository: https://github.com/dotcloud/docker
+
+
+WHAT'S NEXT?
+============
+
+Expect Docker to improve rapidly in several areas! Docker is more than
+a side-project for dotCloud - we are investing significant engineering
+resources in it, and all future dotCloud products will be based on it.
+
+At the same time, I am making sure the contribution process is 100%
+open. That means everything is discussed and decided in the open, and
+the rules for contributing are the same regardless of your employer.
+I'm looking forward to welcoming our first non-dotCloud core committer
+:)
+
+
+Here are a few points where you should expect rapid progress:
+
+
+Remote API
+------------------
+
+The whole point of Docker is to be a building block for complex
+automation. We have made the CLI as scriptable as possible, but at
+some point you just need a stable API for remote programmatic access.
+See https://github.com/dotcloud/docker/issues/21
+
+Runtime API
+------------------
+
+There is a lot of interest in customizing *how* docker containers are
+executed, especially in production environments where many technical
+choices have already been made: storage, networking, distro, kernel
+version, logging, access control... I can't implement all the
+customizations you requested, but I can freeze a runtime API which
+will let everyone contribute extensions while preserving the
+portability of containers.
+
+Build!
+--------
+
+So it turns out docker is an great build tool. As a developer I can
+define precisely, step-by-step, how to build my application and all
+its dependencies into a single container which can run anywhere. No
+more dependency hell, no more "works on my machine". I like to call
+that methodology "extreme vendoring", and it's pure awesome. Today it
+[still requires hacky contrib tools](https://github.com/dotcloud/docker/tree/v0.2.0/contrib/docker-build)
+ but we're going to pull it into docker.
+
+
+HOW YOU CAN HELP
+================
+
+Feel like contributing? Awesome! There are several ways you can help.
+
+
+Become a documentation maintainer
+------------------------------------------------------
+
+We're looking for volunteers to contribute maintain sub-sections of
+the documentation, especially install instructions, to make sure
+they're always up-to-date. Ping me if you're interested.
+
+
+Make screencasts and articles
+--------------------------------------------
+
+If you do anything cool and useful with docker, record a screencast
+and tell us about it! This could be dockerizing an application,
+installing it in a specific environment, cool usage tricks, etc. We
+recommend ascii.io, it's insanely easy to use.
+
+
+Integrate your favorite tools
+----------------------------------------
+
+Docker plays well with other tools in the devops toolbox. There are
+already efforts to integrate with Vagrant, Chef, Puppet, Openstack,
+Mesos... Got a tool you want to integrate with Docker? Create a github
+issue and we'll help you out.
+
+
+Dockerize your app
+----------------------------
+
+It's still rough, but if you want to experiment with "extreme
+vendoring" of your application, get in touch and we'll help you out.
+Take a look at https://github.com/peterbraden/node-opencv for an
+example.
+
+Join the conversation
+-------------------------------
+
+There are insane volumes of interesting conversations going on on irc
+(#docker@freenode), twitter (#docker) and [the google group](https://groups.google.com/forum/?fromgroups#!forum/docker-club).
+
+Whether you have a beginner question or want to discuss a point of
+design, never hesitate to speak up!
+
+And of course all the usual ways of spreading the word - tweets,
+github follows, etc. etc. are always welcome.
+
+
+Become a contributor
+-------------------------------
+
+Got time on your hands and want to write some Go? We love pull
+requests, and will gladly help you find your way through the internals
+and guide you through your first pull request.
+
+
+Check out the [contribution guidelines](https://github.com/dotcloud/docker/blob/master/CONTRIBUTING.md) as a start.
+
+
+HACK DAY ON JUNE 11
+=================
+
+The next Docker hack is on June 11 at the dotCloud HQ in San Francisco. RSVP now at http://www.meetup.com/Docker-meetups/events/118026552/
+
+
+
+Happy hacking!
+
+Solomon & the Docker maintainers
