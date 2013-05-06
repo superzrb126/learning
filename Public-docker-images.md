@@ -63,22 +63,18 @@ docker pull flavio/openSUSE_12.3
 
 #### Standard images
 
-##### Squeeze (stable)
-```
-docker pull tianon/debian:squeeze
-```
-or
-```
-docker pull tianon/debian:6.0.7
-```
-
-##### Wheezy (testing)
+##### Wheezy (stable)
 ```
 docker pull tianon/debian:wheezy
 ```
 or
 ```
 docker pull tianon/debian:7.0
+```
+
+##### Jessie (testing)
+```
+docker pull tianon/debian:jessie
 ```
 
 ##### Sid (unstable)
@@ -94,16 +90,12 @@ docker pull tianon/debian-roll:stable
 ```
 or
 ```
-docker pull tianon/debian-roll:6.0.7
+docker pull tianon/debian-roll:7.0
 ```
 
 ##### Testing
 ```
 docker pull tianon/debian-roll:testing
-```
-or
-```
-docker pull tianon/debian-roll:7.0
 ```
 
 ##### Unstable
