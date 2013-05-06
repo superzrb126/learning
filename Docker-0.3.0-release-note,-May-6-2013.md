@@ -11,14 +11,11 @@ Let us know what you think! We're always available on irc.freenode.net #docker. 
   * Data volumes
   * Searchable index
   * Open-source registry
-
 * What's next?
   * Remote API
   * Runtime API
   * Build!
-
 * How you can help
-
 * Hack day on June 11
 
 
