@@ -22,7 +22,7 @@ Let us know what you think! We're always available on irc.freenode.net #docker. 
 
 # What is Docker?
 
-Docker is an open-source engine which automates the deployment of applications as highly portable, self-sufficient containers.
+[Docker](http://docker.io) is an open-source engine which automates the deployment of applications as highly portable, self-sufficient containers.
 
 Docker containers are both hardware-agnostic and platform-agnostic. This means that they can run anywhere, from your laptop to the largest EC2 compute instance and everything in between - and they don't require that you use a particular language, framework or packaging system. That makes them great building blocks for deploying and scaling web apps, databases and backend services without depending on a particular stack or provider.
 
