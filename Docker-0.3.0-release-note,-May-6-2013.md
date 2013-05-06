@@ -2,7 +2,7 @@ Hi everyone,
 
 we're excited to announce the new version of Docker today. This version is really special since it brings support for the public Index allowing repository search.
 
-# Release Content
+# 0.3.0 summary
 
 ## New searchable index
 
