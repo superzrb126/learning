@@ -7,6 +7,7 @@ Let us know what you think! We're always available on irc.freenode.net #docker. 
 
 # CONTENTS
 
+* What is Docker?
 * 0.3.0 summary
   * Data volumes
   * Searchable index
@@ -17,6 +18,15 @@ Let us know what you think! We're always available on irc.freenode.net #docker. 
   * Build!
 * How you can help
 * Hack day on June 11
+
+
+# What is Docker?
+
+Docker is an open-source engine which automates the deployment of applications as highly portable, self-sufficient containers.
+
+Docker containers are both hardware-agnostic and platform-agnostic. This means that they can run anywhere, from your laptop to the largest EC2 compute instance and everything in between - and they don't require that you use a particular language, framework or packaging system. That makes them great building blocks for deploying and scaling web apps, databases and backend services without depending on a particular stack or provider.
+
+Docker is an open-source implementation of the deployment engine which powers [dotCloud](http://www.dotcloud.com), a popular Platform-as-a-Service. It benefits directly from the experience accumulated over several years of large-scale operation and support of hundreds of thousands of applications and databases.
 
 
 # 0.3.0 summary
