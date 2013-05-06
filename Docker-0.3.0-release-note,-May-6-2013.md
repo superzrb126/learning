@@ -32,9 +32,22 @@ Make sure you install Docker 0.3 to take advantage of it!
 
 ## Open-source Registry
 
-The Index references repositories that are hosted on Registry servers. We are hosting the main one. But we also decided to open-source the Registry source code to allow anyone to control the hosting of his own Registry server. Storing images on a 3rd party Registry still allows to be referenced in the official Index.
+Many of you have asked for a way to host layers in your own private registry. We promised this would be possible soon - and now it is! We are very happy to announce that the docker registry is now open-source.
 
-The source code is available at: https://github.com/dotcloud/docker-registry
+There are 2 main use cases for the open-source registry:
+
+1) Private registry
+
+You shouldn't have to open-source your code to benefit from Docker - and Docker just isn't as cool without the registry. Now you can deploy your own private registry, and use it to share containers within your organization. For example, if you're building a "private PaaS" you could use the registry to store all application builds, ready to be 'docker pull'-ed from any server in your cluster.
+
+2) Public mirror
+
+Even for layers shared by the community, there has been concern that the central registry might become a single point of failure. Wouldn't it be nice to have a mirror system, so that the burden of hosting all these layers can be decentralized, minimizing the impact of downtimes?
+
+Now we can! The new registry API from the ground up to support decentralized mirroring scenarios. This means a registry can redirect layer downloads to 3d-party registries *in a secure way*, so that compromised registries cannot inject malicious content.
+
+
+The new registry is available at https://github.com/dotcloud/docker-registry
 
 ## Feedback?
 
