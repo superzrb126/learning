@@ -2,6 +2,13 @@ Hi everyone,
 
 we're excited to announce the new version of Docker today. This version is really special since it brings support for the public Index allowing repository search.
 
+# CONTENTS
+
+* 0.3.0 summary
+  * Data volumes
+  * Searchable index
+  * Open-source registry
+
 # 0.3.0 summary
 
 ## Data volumes
