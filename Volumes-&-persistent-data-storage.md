@@ -59,3 +59,7 @@ This has to be implemented in order to make volumes more reliable.
 
 A container might have multiple volumes attached and not all of them might be storing data which is of any use beyond the execution of the container to which they were added the first time.
 We should be able to specify the exact volume(s) to be reused from an old container in a new one.
+
+**Using volumes in the Dockerfile**
+
+Docker build should allow us to allocate and use volumes with containers. These volumes should integrate with the features described above to make volumes even more useful.
