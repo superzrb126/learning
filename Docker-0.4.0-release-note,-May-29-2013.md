@@ -1,1 +1,50 @@
-(work in progress)
+Dear Dockers,
+
+Today I am happy to introduce a new release of Docker. In addition to numerous stability and usability fixes, this release introduces 2 highly anticipated features: Remote API and Build.
+
+# Contents
+
+* What is Docker?
+* 0.4.0 summary
+  * Remote API
+  * Build
+  * Reliability improvements
+* What's next?
+  * Broader kernel support
+  * Better documentation
+  * Plugin API
+  * Production-ready
+  * Play nice with other tools
+* How you can help
+* Hack day on June 11
+
+
+# What is Docker?
+
+
+[Docker](http://docker.io) is an open-source engine which automates the deployment of applications as highly portable, self-sufficient containers.
+
+Docker containers are both hardware-agnostic and platform-agnostic. This means that they can run anywhere, from your laptop to the largest EC2 compute instance and everything in between - and they don't require that you use a particular language, framework or packaging system. That makes them great building blocks for deploying and scaling web apps, databases and backend services without depending on a particular stack or provider.
+
+Docker is an open-source implementation of the deployment engine which powers [dotCloud](http://www.dotcloud.com), a popular Platform-as-a-Service. It benefits directly from the experience accumulated over several years of large-scale operation and support of hundreds of thousands of applications and databases.
+
+# 0.4.0 summary
+
+## Remote API
+
+When in daemon mode, Docker can now be remotely controlled via a simple HTTP/JSON protocol. This remote API is properly versioned and [fully documented](http://docs.docker.io/en/latest/api/docker_remote_api.html). It is also used by the official client, which means it supports all docker features.
+
+In addition to the reference implementation, the community has already started working on client libraries for [Go](https://github.com/dotcloud/docker/pull/640), [Python](https://github.com/dotcloud/docker-py) and [Ruby](https://github.com/ActiveState/docker-ruby). Want to implement a client for your favorite language? [Get in touch!](https://github.com/dotcloud/docker/issues/new?title=Remote%20API%20client%20in%20MY_FAVORITE_LANGUAGE&body=Hi%2C%0a+I'm+interested+in+implementing+a+client+library+for+the+docker+remote+API.+Is+anyone+else+interested+in+doing+this+with+me%3F%0a%0a+I'd+also+like+to+add+that+I'm+very+impressed+that+the+Docker+team+took+the+time+to+urlencode+this+ridiculously+long+message+in+their+link+-+especially+considering+I'm+about+to+erase+the+whole+thing.+But+hey%2C+thanks+anyway!&oq=Hi%2C+I'm+interested+in+implementing+a+client+library+for+the+docker+remote+API.+Is+anyone+else+interested+in+doing+this+with+me%3F+I'd+also+like+to+add+that+I'm+very+impressed+that+the+Docker+team+took+the+time+to+urlencode+this+ridiculously+long+message+in+their+link+-+especially+considering+I'm+about+to+erase+the+whole+thing.+But+hey%2C+thanks+anyway!)
+
+
+  * Build
+  * Reliability improvements
+* What's next?
+  * Broader kernel support
+  * Better documentation
+  * Plugin API
+  * Production-ready
+  * Play nice with other tools
+* How you can help
+* Hack day on June 11
+
