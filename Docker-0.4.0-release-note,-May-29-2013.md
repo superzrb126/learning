@@ -42,13 +42,38 @@ We look forward to discovering the amazing things you'll build with this!
 
 # Build
 
+Docker now features a *build* command, which can automatically build containers from your application's source code. All you need to do is add a simple *Dockerfile*.
 
-  * Reliability improvements
-* What's next?
-  * Broader kernel support
-  * Better documentation
-  * Plugin API
-  * Production-ready
-  * Play nice with other tools
-* How you can help
-* Hack day on June 11
+A *Dockerfile* is a very simple text file - usually no longer than 5 to 10 lines - which expresses all your application's dependencies in one place and streamlines the process of assembling them - complete from base system to language-specific packages. *docker build* uses this file to assemble a new container, layer by layer.
+
+For example, here's the Dockerfile [of the Hipache project](https://github.com/dotcloud/hipache/blob/master/Dockerfile):
+
+```
+from	ubuntu:12.04
+run	echo "deb http://archive.ubuntu.com/ubuntu precise main universe" > /etc/apt/sources.list
+run	apt-get -y update
+run	apt-get -y install wget git redis-server supervisor
+run	wget -O - http://nodejs.org/dist/v0.8.23/node-v0.8.23-linux-x64.tar.gz | tar -C /usr/local/ --strip-components=1 -zxv
+run	npm install hipache -g
+run	mkdir -p /var/log/supervisor
+copy	supervisord.conf	/etc/supervisor/conf.d/supervisord.conf
+```
+
+And here's how you can build it:
+
+```
+$ git clone http://github.com/dotcloud/hipache
+$ cd hipache
+$ docker build .
+```
+
+## Reliability improvements
+
+# What's next?
+  ## Broader kernel support
+  ## Better documentation
+  ## Plugin API
+  ## Production-ready
+  ## Play nice with other tools
+# How you can help
+# Hack day on June 11
