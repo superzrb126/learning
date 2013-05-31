@@ -64,16 +64,31 @@ And here's how you can build it:
 ```
 $ git clone http://github.com/dotcloud/hipache
 $ cd hipache
-$ docker build .
+$ docker build -t dotcloud/hipache .
 ```
 
-## Reliability improvements
+If the build is successful, you can use your newly built container with:
+
+```bash
+$ docker run dotcloud/hipache
+```
+
 
 # What's next?
+
   ## Broader kernel support
+
+
+
+
   ## Better documentation
+
   ## Plugin API
+
   ## Production-ready
+
   ## Play nice with other tools
+
+
 # How you can help
 # Hack day on June 11
