@@ -58,7 +58,7 @@ run	apt-get -y install wget git redis-server supervisor
 run	wget -O - http://nodejs.org/dist/v0.8.23/node-v0.8.23-linux-x64.tar.gz | tar -C /usr/local/ --strip-components=1 -zxv
 run	npm install hipache -g
 run	mkdir -p /var/log/supervisor
-copy	supervisord.conf	/etc/supervisor/conf.d/supervisord.conf
+add	supervisord.conf	/etc/supervisor/conf.d/supervisord.conf
 ```
 
 And here's how you can build it:
