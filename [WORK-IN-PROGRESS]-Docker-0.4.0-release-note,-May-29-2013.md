@@ -1,3 +1,5 @@
+# THIS RELEASE NOTE IS WORK IN PROGRESS. DOCKER 0.4.0 IS NOT YET RELEASED
+
 Dear Dockers,
 
 Today I am happy to introduce a new release of Docker. In addition to numerous stability and usability fixes, this release introduces 2 highly anticipated features: Remote API and Build.
