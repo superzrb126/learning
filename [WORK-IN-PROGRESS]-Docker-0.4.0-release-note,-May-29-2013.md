@@ -78,12 +78,14 @@ $ docker run dotcloud/hipache
 
 ## Openstack integration
 
-We're excited to announce an early stage [integration between Openstack and Docker](http://github.com/dotcloud/openstack-docker). Openstack is currently the leading community  [Open source software for building
-private and public clouds](
+We're excited to announce an early stage [integration between Openstack and Docker](http://github.com/dotcloud/openstack-docker). Openstack is an open-source IaaS implementation which is rapidly growing into a standard, with both heavyweight corporate backing and an active development community.
 
-Why? It allows you to do Lightweight Virtualization but by leveraging on the robust APIs of OpenStack. Containers have a lower footprint (compared to VMs), and they boot much faster. On the other hand, they are containers, not VMs; so there is less isolation, and they only run Linux processes.
+Like all major IaaS implementations, Openstack relies heavily on virtual machines. Although there will always be a case for VMs in certain applications, we believe lightweight containers are a great alternative in many scenarios, especially for payloads which are CPU- and memory-intensive and suffer from the performance overhead of VMs.
 
-Also, since containers can run on physical, but also virtual machines, it means that you can run OpenStack to deploy containers on top of e.g. an EC2 cluster.
+Openstack-docker is an experimental backend for Nova, Openstack's deployment scheduler. It allows you to deploy lightweight containers using the standard Openstack APIs. And because it is compatible with the [Docker public index](http://index.docker.io), any docker-compatible container in the World can now be deployed on your Openstack cluster within seconds.
+
+Stay tuned for more Openstack integration scenarios!
+
 
 # What's next?
 
