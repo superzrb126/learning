@@ -104,8 +104,11 @@ Expect Docker to integrate with even more of your favorite tools going forward, 
 
 ## Plugin API
 
-Our goal is to make Docker run everywhere. However, currently Docker cannot be customized to meet the needs of every deployment.
+In order to make Docker easy to run everywhere and easy to integrate with all your favorite tools, we need to make it extremely easy to customize.
 
+We are working on a plugin API which will greatly facilitate the integrations listed above - and many more we didn't even think about.
+
+Let us know if you want to start playing with the API before it's generally available.
 
 
 ## Externally mounted volumes
@@ -121,13 +124,13 @@ We believe that great documentation is worth 10 features. We are often told that
 
 If you have feedback on how to improve our documentation, please get in touch by replying to this email, or by [filing an issue](https://github.com/dotcloud/docker/issues). We always appreciate it!
 
+## Production-ready
 
-
-  ## Production-ready
-
-
+Docker is still alpha software, and not suited for production. We are working hard to get there, and we are confident that it will be possible within a few months.
 
 # How you can help
+
+
 # Hack day on June 11
 
 
