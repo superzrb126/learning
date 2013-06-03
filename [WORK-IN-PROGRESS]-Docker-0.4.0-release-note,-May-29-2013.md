@@ -13,10 +13,13 @@ Today I am happy to introduce a new release of Docker. In addition to numerous s
   * Openstack integration
 * What's next?
   * Broader kernel support
-  * Better documentation
+  * Cross architecture support
+  * Even more integrations
   * Plugin API
+  * Externally mounted volumes 
+  * Better documentation
   * Production-ready
-  * Play nice with other tools
+* Contributor of the month: backjlack
 * How you can help
 * Hack day on June 11
 
@@ -89,17 +92,22 @@ Stay tuned for more Openstack integration scenarios!
 
 # What's next?
 
-## Broader kernel support
+
+Broader kernel support
+----------------------
 
 Our goal is to make Docker run everywhere, but currently Docker requires [Linux version 3.8 or higher with lxc and aufs support](http://docs.docker.io/en/latest/installation/kernel.html). If you're deploying new machines for the purpose of running Docker, this is a fairly easy requirement to meet. However, if you're adding Docker to an existing deployment, you may not have the flexibility to update and patch the kernel.
 
 Expanding Docker's kernel support is a priority. This includes running on older kernel versions, but also on kernels with no AUFS support, or with incomplete lxc capabilities.
 
-## Cross-architecture support
+
+Cross-architecture support
+--------------------------
 
 Our goal is to make Docker run everywhere. However currently Docker only runs on x86_64 systems. We plan on expanding architecture support, so that Docker containers can be created and used on more architectures.
 
-## Even more integrations
+Even more integrations
+----------------------
 
 We want Docker to be the secret ingredient that makes your existing tools more awesome. Thanks to this philosophy, Docker has already been integrated with [Puppet](http://forge.puppetlabs.com/garethr/docker),  [Chef](), [Openstack Nova](https://github.com/dotcloud/openstack-docker), [Jenkins](https://github.com/georgebashi/jenkins-docker-plugin), [DotCloud sandbox](http://github.com/dotcloud/sandbox), [Strider CI](http://blog.frozenridge.co/next-generation-continuous-integration-deployment-with-dotclouds-docker-and-strider/) and even [Heroku buildpacks](https://github.com/progrium/buildstep).
 
@@ -114,7 +122,8 @@ Expect Docker to integrate with even more of your favorite tools going forward, 
 * Orchestration tools like [Zookeeper](http://zookeeper.apache.org/), [Mesos](http://incubator.apache.org/mesos/) and [Galaxy](https://github.com/ning/galaxy)
 * Infrastructure deployment tools like [Openstack](http://openstack.org), [Apache Cloudstack](http://apache.cloudstack.org), [Ganeti](https://code.google.com/p/ganeti/)
 
-## Plugin API
+Plugin API
+----------
 
 We want Docker to run everywhere, and to integrate with every devops tool. Those are ambitious goals, and the only way to reach them is with the Docker community. For the community to participate fully, we need an API which allows Docker to be deeply and easily customized.
 
@@ -123,31 +132,103 @@ We are working on a plugin API which will make Docker very, very customization-f
 Let us know if you want to start playing with the API before it's generally available.
 
 
-## Externally mounted volumes
+Externally mounted volumes
+--------------------------
 
 In 0.3 we [introduced data volumes](https://github.com/dotcloud/docker/wiki/Docker-0.3.0-release-note%2C-May-6-2013#data-volumes), a great mechanism for manipulating persistent data such as database files, log files, etc.
 
 Data volumes can be shared between containers, a powerful capability [which allows many advanced use cases](http://docs.docker.io/en/latest/examples/couchdb_data_volumes.html). In the future it will also be possible to share volumes between a container and the underlying host. This will make certain scenarios much easier, such as using a high-performance storage backend for your production database, making live development changes available to a container, etc.
 
 
-## Better documentation
+Better documentation
+--------------------
 
 We believe that great documentation is worth 10 features. We are often told that "Docker's documentation is great for a 2-month old project". Our goal is to make it great, period.
 
 If you have feedback on how to improve our documentation, please get in touch by replying to this email, or by [filing an issue](https://github.com/dotcloud/docker/issues). We always appreciate it!
 
-## Production-ready
+Production-ready
+----------------
 
 Docker is still alpha software, and not suited for production. We are working hard to get there, and we are confident that it will be possible within a few months.
 
-# How you can help
+Contributor of the month: Backjlack
+===================================
+
+To inaugurate our new "contributor of the month" section, we would like to send a special shout-out to [Backjlack](http://github.com/unclejack). Backjlack - although we've never met you, we want you to know we deeply appreciate your contribution to the community and the project. Your [participation on IRC](https://botbot.me/freenode/docker/search/?q=backjlack) is incredibly helpful, and it seems sometimes you know the project even better than the core contributors!
+
+On behalf of the Docker core team, I hope we can buy you a beer one of these days.
+
+Thanks!
 
 
-# Hack day on June 11
+How you can help
+================
+
+Feel like contributing? Awesome! There are several ways you can help.
 
 
-HACK DAY ON JUNE 11
-===================
+Become a documentation maintainer
+------------------------------------------------------
+
+We're looking for volunteers to contribute maintain sub-sections of
+the documentation, especially install instructions, to make sure
+they're always up-to-date. Ping me if you're interested.
+
+
+Make screencasts and articles
+--------------------------------------------
+
+If you do anything cool and useful with docker, record a screencast
+and tell us about it! This could be dockerizing an application,
+installing it in a specific environment, cool usage tricks, etc. We
+recommend ascii.io, it's insanely easy to use.
+
+
+Integrate your favorite tools
+----------------------------------------
+
+Docker plays well with other tools in the devops toolbox. There are
+already efforts to integrate with Vagrant, Chef, Puppet, Openstack,
+Mesos... Got a tool you want to integrate with Docker? Create a github
+issue and we'll help you out.
+
+
+Dockerize your app
+----------------------------
+
+It's still rough, but if you want to experiment with "extreme
+vendoring" of your application, get in touch and we'll help you out.
+Take a look at https://github.com/peterbraden/node-opencv for an
+example.
+
+Join the conversation
+-------------------------------
+
+There are insane volumes of interesting conversations going on on irc
+(#docker@freenode), twitter (#docker) and [the google group](https://groups.google.com/forum/?fromgroups#!forum/docker-club).
+
+Whether you have a beginner question or want to discuss a point of
+design, never hesitate to speak up!
+
+And of course all the usual ways of spreading the word - tweets,
+github follows, etc. etc. are always welcome.
+
+
+Become a contributor
+-------------------------------
+
+Got time on your hands and want to write some Go? We love pull
+requests, and will gladly help you find your way through the internals
+and guide you through your first pull request.
+
+
+Check out the [contribution guidelines](https://github.com/dotcloud/docker/blob/master/CONTRIBUTING.md) as a start.
+
+
+
+Hack day on June 11
+====================
 
 The next Docker hack day is on Tuesday, June 11 at the dotCloud HQ in San Francisco. RSVP now at http://www.meetup.com/Docker-meetups/events/118026552/
 
