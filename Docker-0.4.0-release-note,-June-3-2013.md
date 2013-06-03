@@ -177,7 +177,7 @@ Contributor of the month: Backjlack
 
 To inaugurate our new "contributor of the month" section, we would like to send a special shout-out to [Backjlack](http://github.com/unclejack). Backjlack - although we've never met you, we want you to know we deeply appreciate your contribution to the community and the project. Your [participation on IRC](https://botbot.me/freenode/docker/search/?q=backjlack) is incredibly helpful, and it seems sometimes you know the project even better than the core contributors!
 
-On behalf of the Docker core team, I hope we can buy you a beer one of these days.
+On behalf of the Docker core team, we hope we can buy you a beer one of these days.
 
 Thanks!
 
