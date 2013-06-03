@@ -21,8 +21,10 @@ Contents
   * Externally mounted volumes 
   * Better documentation
   * Production-ready
-* Contributor of the month: backjlack
-* How you can help
+* Community news
+  * Contributor of the month: Backjlack
+  * New maintainer: Victor Vieux
+  * How you can help
 * Hack day on June 11
 
 
@@ -179,60 +181,25 @@ On behalf of the Docker core team, I hope we can buy you a beer one of these day
 
 Thanks!
 
-New core maintainer: Victor Vieux
----------------------------------
+New maintainer: Victor Vieux
+----------------------------
 
 We are happy to welcome a 3d core maintainer, Victor Vieux from Paris, France! This brings us up to a total of 10 maintainers across the project, including documentation, registry, packaging etc.
 
 
-Become a maintainer
--------------------
+How you can help
+----------------
 
-Docker is growing faster than we can keep up! We are looking for volunteers to help maintain the various components of the project - everything from documentation, packaging, project infrastructure to plugins and core components.
+* Become a maintainer. Docker is growing faster than we can keep up! We are looking for volunteers to help maintain the various components of the project - everything from documentation, packaging, project infrastructure to plugins and core components. Check out the [contribution guidelines](https://github.com/dotcloud/docker/blob/master/CONTRIBUTING.md) as a start.
 
-If you're interested, get in touch on #docker@freenode!
+* Make screencasts and articles. If you do anything cool and useful with docker, record a screencast and tell us about it! This could be dockerizing an application, installing it in a specific environment, cool usage tricks, etc. We recommend ascii.io, it's insanely easy to use.
 
+* Dockerize your favorite tools. Docker plays well with other tools in the devops toolbox. Got a tool you want to integrate with Docker? Create a github issue and we'll help you out.
 
-Make screencasts and articles
------------------------------
+* Join the conversation. There are insane volumes of interesting conversations going on on irc
+(#docker@freenode), twitter (#docker) and [the google group](https://groups.google.com/forum/?fromgroups#!forum/docker-club). Whether you have a beginner question or want to discuss a point of design, never hesitate to speak up!
 
-If you do anything cool and useful with docker, record a screencast and tell us about it! This could be dockerizing an application, installing it in a specific environment, cool usage tricks, etc. We recommend ascii.io, it's insanely easy to use.
-
-
-Integrate your favorite tools
------------------------------
-
-Docker plays well with other tools in the devops toolbox. Got a tool you want to integrate with Docker? Create a github issue and we'll help you out.
-
-
-Dockerize your app
-------------------
-
-It's still rough, but if you want to experiment with "extreme
-vendoring" of your application, get in touch and we'll help you out.
-Take a look at https://github.com/peterbraden/node-opencv for an
-example.
-
-Join the conversation
----------------------
-
-There are insane volumes of interesting conversations going on on irc
-(#docker@freenode), twitter (#docker) and [the google group](https://groups.google.com/forum/?fromgroups#!forum/docker-club).
-
-Whether you have a beginner question or want to discuss a point of design, never hesitate to speak up!
-
-And of course all the usual ways of spreading the word - tweets, github follows, etc. etc. are always welcome.
-
-
-Become a contributor
---------------------
-
-Got time on your hands and want to write some Go? We love pull
-requests, and will gladly help you find your way through the internals
-and guide you through your first pull request.
-
-
-Check out the [contribution guidelines](https://github.com/dotcloud/docker/blob/master/CONTRIBUTING.md) as a start.
+* And of course all the usual ways of spreading the word - tweets, github follows, etc. etc. are always welcome.
 
 
 
