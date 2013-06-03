@@ -78,14 +78,28 @@ $ docker run dotcloud/hipache
 
 # What's next?
 
-  ## Broader kernel support
+## Broader kernel support
+
+Currently Docker requires [Linux version 3.8 or higher with lxc and aufs support](http://docs.docker.io/en/latest/installation/kernel.html). If you're deploying new machines for the purpose of running Docker, this is a fairly easy requirement to meet. However, if you're adding Docker to an existing deployment, you may not have the flexibility to update and patch the kernel.
+
+Expanding Docker's kernel support is a priority. This includes running on older kernel versions, but also on kernels with no AUFS support, or with incomplete lxc capabilities.
+
+## Externally mounted volumes
+
+In 0.3 we [introduced data volumes](https://github.com/dotcloud/docker/wiki/Docker-0.3.0-release-note%2C-May-6-2013#data-volumes), a great mechanism for manipulating persistent data such as database files, log files, etc.
+
+Data volumes can be shared between containers, a powerful capability [which allows many advanced use cases](http://docs.docker.io/en/latest/examples/couchdb_data_volumes.html). In the future it will also be possible to share volumes between a container and the underlying host. This will make certain scenarios much easier, such as using a high-performance storage backend for your production database, making live development changes available to a container, etc.
 
 
+## Better documentation
+
+We believe that great documentation is worth 10 features. We are often told that "Docker's documentation is great for a 2-month old project". Our goal is to make it great, period.
+
+If you have feedback on how to improve our documentation, please get in touch by replying to this email, or by [filing an issue](https://github.com/dotcloud/docker/issues). We always appreciate it!
+
+## Plugin API
 
 
-  ## Better documentation
-
-  ## Plugin API
 
   ## Production-ready
 
@@ -94,3 +108,12 @@ $ docker run dotcloud/hipache
 
 # How you can help
 # Hack day on June 11
+
+
+HACK DAY ON JUNE 11
+===================
+
+The next Docker hack day is on Tuesday, June 11 at the dotCloud HQ in San Francisco. RSVP now at http://www.meetup.com/Docker-meetups/events/118026552/
+
+
+Happy hacking!
