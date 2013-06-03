@@ -10,7 +10,7 @@ Today I am happy to introduce a new release of Docker. In addition to numerous s
 * 0.4.0 summary
   * Remote API
   * Build
-  * Reliability improvements
+  * Openstack integration
 * What's next?
   * Broader kernel support
   * Better documentation
@@ -42,7 +42,7 @@ In addition to the reference implementation, the community has already started w
 
 We look forward to discovering the amazing things you'll build with this!
 
-# Build
+## Build
 
 Docker now features a *build* command, which can automatically build containers from your application's source code. All you need to do is add a simple *Dockerfile*.
 
@@ -76,6 +76,15 @@ $ docker run dotcloud/hipache
 ```
 
 
+## Openstack integration
+
+We're excited to announce an early stage [integration between Openstack and Docker](http://github.com/dotcloud/openstack-docker). Openstack is currently the leading community  [Open source software for building
+private and public clouds](
+
+Why? It allows you to do Lightweight Virtualization but by leveraging on the robust APIs of OpenStack. Containers have a lower footprint (compared to VMs), and they boot much faster. On the other hand, they are containers, not VMs; so there is less isolation, and they only run Linux processes.
+
+Also, since containers can run on physical, but also virtual machines, it means that you can run OpenStack to deploy containers on top of e.g. an EC2 cluster.
+
 # What's next?
 
 ## Broader kernel support
@@ -101,12 +110,13 @@ Expect Docker to integrate with even more of your favorite tools going forward, 
 * Configuration management tools like [Puppet](http://puppetlabs.com), [Chef](http://www.opscode.com/chef/) and [Salt](http://saltstack.org)
 * Personal development environments like [Vagrant](http://vagrantup.com), [Boxen](http://boxen.github.com/), [Koding](http://koding.com) and [Cloud9](http://c9.io).
 * Orchestration tools like [Zookeeper](http://zookeeper.apache.org/), [Mesos](http://incubator.apache.org/mesos/) and [Galaxy](https://github.com/ning/galaxy)
+* Infrastructure deployment tools like [Openstack](http://openstack.org), [Apache Cloudstack](http://apache.cloudstack.org), [Ganeti](https://code.google.com/p/ganeti/)
 
 ## Plugin API
 
-In order to make Docker easy to run everywhere and easy to integrate with all your favorite tools, we need to make it extremely easy to customize.
+We want Docker to run everywhere, and to integrate with every devops tool. Those are ambitious goals, and the only way to reach them is with the Docker community. For the community to participate fully, we need an API which allows Docker to be deeply and easily customized.
 
-We are working on a plugin API which will greatly facilitate the integrations listed above - and many more we didn't even think about.
+We are working on a plugin API which will make Docker very, very customization-friendly. We believe it will facilitate the integrations listed above - and many more we didn't even think about.
 
 Let us know if you want to start playing with the API before it's generally available.
 
