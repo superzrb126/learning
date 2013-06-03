@@ -3,7 +3,7 @@ Introducing Docker 0.4.0
 
 Dear Dockers,
 
-Today I am happy to introduce a new release of Docker. In addition to numerous stability and usability fixes, this release introduces 2 highly anticipated features: Remote API and Build.
+Today I am happy to introduce a new release of Docker. In addition to numerous stability and usability fixes, this release introduces 2 highly anticipated features: Remote API and Build, as well as a very cool Openstack integration.
 
 Contents
 ========
