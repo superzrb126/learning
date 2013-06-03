@@ -1,10 +1,12 @@
-# THIS RELEASE NOTE IS WORK IN PROGRESS. DOCKER 0.4.0 IS NOT YET RELEASED
+Introducing Docker 0.4.0
+========================
 
 Dear Dockers,
 
 Today I am happy to introduce a new release of Docker. In addition to numerous stability and usability fixes, this release introduces 2 highly anticipated features: Remote API and Build.
 
-# Contents
+Contents
+========
 
 * What is Docker?
 * 0.4.0 summary
@@ -24,8 +26,8 @@ Today I am happy to introduce a new release of Docker. In addition to numerous s
 * Hack day on June 11
 
 
-# What is Docker?
-
+What is Docker?
+===============
 
 [Docker](http://docker.io) is an open-source engine which automates the deployment of applications as highly portable, self-sufficient containers.
 
@@ -33,9 +35,12 @@ Docker containers are both hardware-agnostic and platform-agnostic. This means t
 
 Docker is an open-source implementation of the deployment engine which powers [dotCloud](http://www.dotcloud.com), a popular Platform-as-a-Service. It benefits directly from the experience accumulated over several years of large-scale operation and support of hundreds of thousands of applications and databases.
 
-# 0.4.0 summary
 
-## Remote API
+0.4.0 summary
+=============
+
+Remote API
+----------
 
 The whole point of Docker is to be a building block for complex automation. We have made the CLI as scriptable as possible, but at some point many of you found it difficult to write code that interacts with docker... until now.
 
@@ -45,7 +50,9 @@ In addition to the reference implementation, the community has already started w
 
 We look forward to discovering the amazing things you'll build with this!
 
-## Build
+
+Build
+-----
 
 Docker now features a *build* command, which can automatically build containers from your application's source code. All you need to do is add a simple *Dockerfile*.
 
@@ -79,7 +86,8 @@ $ docker run dotcloud/hipache
 ```
 
 
-## Openstack integration
+Openstack integration
+---------------------
 
 We're excited to announce an early stage [integration between Openstack and Docker](http://github.com/dotcloud/openstack-docker). Openstack is an open-source IaaS implementation which is rapidly growing into a standard, with both heavyweight corporate backing and an active development community.
 
@@ -90,8 +98,9 @@ Openstack-docker is an experimental backend for Nova, Openstack's deployment sch
 Stay tuned for more Openstack integration scenarios!
 
 
-# What's next?
 
+What's next?
+============
 
 Broader kernel support
 ----------------------
@@ -105,6 +114,7 @@ Cross-architecture support
 --------------------------
 
 Our goal is to make Docker run everywhere. However currently Docker only runs on x86_64 systems. We plan on expanding architecture support, so that Docker containers can be created and used on more architectures.
+
 
 Even more integrations
 ----------------------
@@ -121,6 +131,7 @@ Expect Docker to integrate with even more of your favorite tools going forward, 
 * Personal development environments like [Vagrant](http://vagrantup.com), [Boxen](http://boxen.github.com/), [Koding](http://koding.com) and [Cloud9](http://c9.io).
 * Orchestration tools like [Zookeeper](http://zookeeper.apache.org/), [Mesos](http://incubator.apache.org/mesos/) and [Galaxy](https://github.com/ning/galaxy)
 * Infrastructure deployment tools like [Openstack](http://openstack.org), [Apache Cloudstack](http://apache.cloudstack.org), [Ganeti](https://code.google.com/p/ganeti/)
+
 
 Plugin API
 ----------
@@ -147,13 +158,20 @@ We believe that great documentation is worth 10 features. We are often told that
 
 If you have feedback on how to improve our documentation, please get in touch by replying to this email, or by [filing an issue](https://github.com/dotcloud/docker/issues). We always appreciate it!
 
+
 Production-ready
 ----------------
 
 Docker is still alpha software, and not suited for production. We are working hard to get there, and we are confident that it will be possible within a few months.
 
+
+
+
+Community news
+==============
+
 Contributor of the month: Backjlack
-===================================
+-----------------------------------
 
 To inaugurate our new "contributor of the month" section, we would like to send a special shout-out to [Backjlack](http://github.com/unclejack). Backjlack - although we've never met you, we want you to know we deeply appreciate your contribution to the community and the project. Your [participation on IRC](https://botbot.me/freenode/docker/search/?q=backjlack) is incredibly helpful, and it seems sometimes you know the project even better than the core contributors!
 
@@ -161,41 +179,34 @@ On behalf of the Docker core team, I hope we can buy you a beer one of these day
 
 Thanks!
 
+New core maintainer: Victor Vieux
+---------------------------------
 
-How you can help
-================
-
-Feel like contributing? Awesome! There are several ways you can help.
+We are happy to welcome a 3d core maintainer, Victor Vieux from Paris, France! This brings us up to a total of 10 maintainers across the project, including documentation, registry, packaging etc.
 
 
-Become a documentation maintainer
-------------------------------------------------------
+Become a maintainer
+-------------------
 
-We're looking for volunteers to contribute maintain sub-sections of
-the documentation, especially install instructions, to make sure
-they're always up-to-date. Ping me if you're interested.
+Docker is growing faster than we can keep up! We are looking for volunteers to help maintain the various components of the project - everything from documentation, packaging, project infrastructure to plugins and core components.
+
+If you're interested, get in touch on #docker@freenode!
 
 
 Make screencasts and articles
---------------------------------------------
+-----------------------------
 
-If you do anything cool and useful with docker, record a screencast
-and tell us about it! This could be dockerizing an application,
-installing it in a specific environment, cool usage tricks, etc. We
-recommend ascii.io, it's insanely easy to use.
+If you do anything cool and useful with docker, record a screencast and tell us about it! This could be dockerizing an application, installing it in a specific environment, cool usage tricks, etc. We recommend ascii.io, it's insanely easy to use.
 
 
 Integrate your favorite tools
-----------------------------------------
+-----------------------------
 
-Docker plays well with other tools in the devops toolbox. There are
-already efforts to integrate with Vagrant, Chef, Puppet, Openstack,
-Mesos... Got a tool you want to integrate with Docker? Create a github
-issue and we'll help you out.
+Docker plays well with other tools in the devops toolbox. Got a tool you want to integrate with Docker? Create a github issue and we'll help you out.
 
 
 Dockerize your app
-----------------------------
+------------------
 
 It's still rough, but if you want to experiment with "extreme
 vendoring" of your application, get in touch and we'll help you out.
@@ -203,20 +214,18 @@ Take a look at https://github.com/peterbraden/node-opencv for an
 example.
 
 Join the conversation
--------------------------------
+---------------------
 
 There are insane volumes of interesting conversations going on on irc
 (#docker@freenode), twitter (#docker) and [the google group](https://groups.google.com/forum/?fromgroups#!forum/docker-club).
 
-Whether you have a beginner question or want to discuss a point of
-design, never hesitate to speak up!
+Whether you have a beginner question or want to discuss a point of design, never hesitate to speak up!
 
-And of course all the usual ways of spreading the word - tweets,
-github follows, etc. etc. are always welcome.
+And of course all the usual ways of spreading the word - tweets, github follows, etc. etc. are always welcome.
 
 
 Become a contributor
--------------------------------
+--------------------
 
 Got time on your hands and want to write some Go? We love pull
 requests, and will gladly help you find your way through the internals
