@@ -210,3 +210,4 @@ The next Docker hack day is on Tuesday, June 11 at the dotCloud HQ in San Franci
 
 
 Happy hacking!
+The Docker team
