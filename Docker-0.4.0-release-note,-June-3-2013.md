@@ -121,7 +121,7 @@ Our goal is to make Docker run everywhere. However currently Docker only runs on
 Even more integrations
 ----------------------
 
-We want Docker to be the secret ingredient that makes your existing tools more awesome. Thanks to this philosophy, Docker has already been integrated with [Puppet](http://forge.puppetlabs.com/garethr/docker),  [Chef](), [Openstack Nova](https://github.com/dotcloud/openstack-docker), [Jenkins](https://github.com/georgebashi/jenkins-docker-plugin), [DotCloud sandbox](http://github.com/dotcloud/sandbox), [Strider CI](http://blog.frozenridge.co/next-generation-continuous-integration-deployment-with-dotclouds-docker-and-strider/) and even [Heroku buildpacks](https://github.com/progrium/buildstep).
+We want Docker to be the secret ingredient that makes your existing tools more awesome. Thanks to this philosophy, Docker has already been integrated with [Puppet](http://forge.puppetlabs.com/garethr/docker),  [Chef](http://www.opscode.com/chef), [Openstack Nova](https://github.com/dotcloud/openstack-docker), [Jenkins](https://github.com/georgebashi/jenkins-docker-plugin), [DotCloud sandbox](http://github.com/dotcloud/sandbox), [Strider CI](http://blog.frozenridge.co/next-generation-continuous-integration-deployment-with-dotclouds-docker-and-strider/) and even [Heroku buildpacks](https://github.com/progrium/buildstep).
 
 Expect Docker to integrate with even more of your favorite tools going forward, including:
 
