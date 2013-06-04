@@ -132,7 +132,7 @@ Expect Docker to integrate with even more of your favorite tools going forward, 
 * Configuration management tools like [Puppet](http://puppetlabs.com), [Chef](http://www.opscode.com/chef/) and [Salt](http://saltstack.org)
 * Personal development environments like [Vagrant](http://vagrantup.com), [Boxen](http://boxen.github.com/), [Koding](http://koding.com) and [Cloud9](http://c9.io).
 * Orchestration tools like [Zookeeper](http://zookeeper.apache.org/), [Mesos](http://incubator.apache.org/mesos/) and [Galaxy](https://github.com/ning/galaxy)
-* Infrastructure deployment tools like [Openstack](http://openstack.org), [Apache Cloudstack](http://apache.cloudstack.org), [Ganeti](https://code.google.com/p/ganeti/)
+* Infrastructure deployment tools like [Openstack](http://openstack.org), [Apache Cloudstack](https://cloudstack.apache.org/), [Ganeti](https://code.google.com/p/ganeti/)
 
 
 Plugin API
