@@ -16,6 +16,10 @@ findspire/wheezy                   Template image of Debian Wheezy.
 rockstack/rockstack-debian-build   
 ```
 
+Followed by docker pull to get an image.
+
+`docker pull tianon/debian`
+
 ## Official images
 
 ### All images from the Ubuntu repository
