@@ -1,15 +1,8 @@
 ::
 
+  sudo apt-get update
+  sudo apt-get install -y debhelper build-essential autotools-dev golang
   git clone https://github.com/dotcloud/docker
-  cd docker
-  git checkout packaging
-  make deb
-  cd ..
-  sudo dpkg -i docker-dev_1_amd64.deb
-  
-  # You might need to install dependencies with
-  sudo apt-get install -f
-
-Once launchpad is up, add to /etc/apt/sources.list ::
-
-  deb http://ppa.launchpad.net/noise+ppa/docker-dev/ubuntu precise main
+  cd docker/packaging/debian
+  make debian
+  sudo dpkg -i lxc-docker_*-1_amd64.deb; sudo apt-get install -f -y
