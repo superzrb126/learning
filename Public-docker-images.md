@@ -4,6 +4,8 @@ You can find a more complete list of images at [index.docker.io](http://index.do
 
 ## Searching the index
 
+You can use `docker search` to search [index.docker.io](http://index.docker.io) for images from the command line.
+
 ```
 docker search debian
 Found 6 results matching your query ("debian")
