@@ -51,7 +51,9 @@ Note that this image is somewhat limited, being that it is simply a faithful cop
 
 ### Arch Linux base image
 
-(Available somewhere, can't remember where)
+```
+docker pull jbgi/arch-base
+```
 
 ### openSUSE Linux base image
 
