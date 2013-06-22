@@ -1,5 +1,7 @@
 # Public docker images
 
+You can find a more complete list of images at [index.docker.io](http://index.docker.io)
+
 ## Official images
 
 ### All images from the Ubuntu repository
