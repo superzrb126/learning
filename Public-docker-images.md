@@ -2,6 +2,20 @@
 
 You can find a more complete list of images at [index.docker.io](http://index.docker.io)
 
+## Searching the index
+
+```
+docker search debian
+Found 6 results matching your query ("debian")
+NAME                               DESCRIPTION
+tianon/debian                      
+tianon/debian-roll                 
+mzdaniel/debian                    
+wdtz/debian-6.0-x86                Debian 6.0 (x86), based on OpenVZ template...
+findspire/wheezy                   Template image of Debian Wheezy.
+rockstack/rockstack-debian-build   
+```
+
 ## Official images
 
 ### All images from the Ubuntu repository
