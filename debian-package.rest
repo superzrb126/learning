@@ -21,7 +21,11 @@ with
 GRUB_CMDLINE_LINUX="cgroup_enable=memory swapaccount"
 ```
 
-Then update your grub configuration like so `sudo grub-mkconfig -o /boot/grub/grub.cfg`
+Then update your grub configuration like so. 
+
+```
+sudo grub-mkconfig -o /boot/grub/grub.cfg
+```
 
 Before rebooting add the following line to `/etc/fstab`
 
