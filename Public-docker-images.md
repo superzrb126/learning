@@ -216,7 +216,7 @@ docker run shykes/dockerbuilder dockerbuilder REVISION S3_ID S3_KEY
 
 Build a python web app. Source code is at http://github.com/shykes/pybuilder
 
-```
+```bash
 BUILD_JOB=$(docker run -d shykes/pybuilder buildapp http://github.com/shykes/helloflask/archive/master.tar.gz)
 docker wait $BUILD_JOB
 BUILD_IMAGE=$(docker commit $BUILD_JOB)
@@ -227,7 +227,7 @@ docker run -p 5000 $BUILD_IMAGE runapp
 
 A ready-to-use build of the [OpenCV library](http://opencv.org) including [NodeJS 0.8 bindings](https://github.com/peterbraden/node-opencv/).
 
-```
+```bash
 docker run shykes/node-opencv node -e 'console.log(require("opencv").version)'
 ```
 
