@@ -235,7 +235,7 @@ docker run shykes/node-opencv node -e 'console.log(require("opencv").version)'
 
 IRC bot, with two flavors of real-time web interface: [Full-screen](http://logbot.g0v.tw/) and [embedded widget](http://g0v.tw/).
 
-```
+```bash
 # Instant IRC bot + Web UI
 docker run -e 'LOGBOT_NICK=bot_name_here' \
            -e 'LOGBOT_CHANNELS=#docker,#g0v.tw' \
@@ -247,7 +247,7 @@ docker run -e 'LOGBOT_NICK=bot_name_here' \
 
 A collaborative spreadsheet editor. This is the same docker image powers our public site at http://ethercalc.org/.
 
-```
+```bash
 # Runs at port 6967 (default)
 docker run audreyt/ethercalc
 
