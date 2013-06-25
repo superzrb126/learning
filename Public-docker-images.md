@@ -231,6 +231,18 @@ A ready-to-use build of the [OpenCV library](http://opencv.org) including [NodeJ
 docker run shykes/node-opencv node -e 'console.log(require("opencv").version)'
 ```
 
+### [Logbot](https://github.com/dannvix/Logbot)
+
+IRC bot, with two flavors of real-time web interface: [Full-screen](http://logbot.g0v.tw/) and [embedded widget](http://g0v.tw/).
+
+```
+# Instant IRC bot + Web UI
+docker run -e 'LOGBOT_NICK=bot_name_here' \
+           -e 'LOGBOT_CHANNELS=#docker,#g0v.tw' \
+           -e 'LOGBOT_SERVER=irc.freenode.net' \
+       audreyt/logbot
+```
+
 ### [EtherCalc](http://ethercalc.net/) (with Redis + Node.js + WebWorker-Threads)
 
 A collaborative spreadsheet editor. This is the same docker image powers our public site at http://ethercalc.org/.
