@@ -230,3 +230,15 @@ A ready-to-use build of the [OpenCV library](http://opencv.org) including [NodeJ
 ```
 docker run shykes/node-opencv node -e 'console.log(require("opencv").version)'
 ```
+
+### [EtherCalc](http://ethercalc.net/) (with Redis + Node.js + WebWorker-Threads)
+
+A collaborative spreadsheet editor. This is the same docker image powers our public site at http://ethercalc.org/.
+
+```
+# Runs at port 6967 (default)
+docker run audreyt/ethercalc
+
+# Runs at another port, for example 8080
+docker run -p 8080:6967 audreyt/ethercalc
+```
