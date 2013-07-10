@@ -93,7 +93,7 @@ docker pull tianon/debian:wheezy
 ```
 or
 ```
-docker pull tianon/debian:7.0
+docker pull tianon/debian:7.1
 ```
 
 ##### Jessie (testing)
@@ -114,7 +114,7 @@ docker pull tianon/debian-roll:stable
 ```
 or
 ```
-docker pull tianon/debian-roll:7.0
+docker pull tianon/debian-roll:7.1
 ```
 
 ##### Testing
