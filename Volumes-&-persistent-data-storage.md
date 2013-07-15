@@ -4,7 +4,7 @@ Docker has volumes which can be reused from container to container. These volume
 * they can't be backed up and restored from backups (without piping data into and out of the container)
 * they can't be stored on custom storage (e.g.: use high IOPS storage for a volume and regular IOPS storage for others)
 * they can't be used for exposing data from the host into the container during runtime
-* it's not possible to cherry pick the containers to be used from an old container in a new container
+* it's not possible to cherry pick the volumes to be used from an old container in a new container
 * it's not possible to manage the volumes after deleting the containers to which they were attached
 
 ***
