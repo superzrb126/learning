@@ -10,22 +10,20 @@ Contents
 
 * What is Docker?
 * 0.5.0 summary
-  * Remote API
-  * Build
-  * Openstack integration
+  * External volumes
+  * Advanced networking
+  * Self-hosted registry
 * What's next?
   * Broader kernel support
   * Cross architecture support
   * Even more integrations
   * Plugin API
-  * Externally mounted volumes 
   * Better documentation
   * Production-ready
 * Community news
   * Contributor of the month: Backjlack
-  * New maintainer: Victor Vieux
   * How you can help
-* Hack day on June 11
+* Hack day on July 30
 
 
 What is Docker?
