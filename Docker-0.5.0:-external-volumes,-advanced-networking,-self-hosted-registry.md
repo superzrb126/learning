@@ -20,9 +20,6 @@ Contents
   * Plugin API
   * Better documentation
   * Production-ready
-* Community news
-  * Contributor of the month: Backjlack
-  * How you can help
 * Hack day on July 30
 
 
@@ -123,17 +120,8 @@ Docker is still alpha software, and not suited for production. We are working ha
 
 
 
-Community news
-==============
-
-Contributor of the month: Keeb
-------------------------------
-
-FIXME: keeb
-
-
 How you can help
-----------------
+==============
 
 * Contribute! Docker is growing faster than we can keep up! We are looking for volunteers to help improve the various components of the project - everything from documentation, packaging, project infrastructure to plugins and core components. Check out the [contribution guidelines](https://github.com/dotcloud/docker/blob/master/CONTRIBUTING.md) as a start.
 
