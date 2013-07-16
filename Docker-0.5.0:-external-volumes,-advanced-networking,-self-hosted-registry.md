@@ -20,6 +20,7 @@ Contents
   * Plugin API
   * Better documentation
   * Production-ready
+* How you can help
 * Hack day on July 30
 
 
