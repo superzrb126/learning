@@ -50,7 +50,11 @@ You can also mark parts of your container as persistent volumes at build time, b
 Advanced networking
 -------------------
 
-*FIXME: UDP port allocation*
+### UDP port allocation
+Your are now able to allocate UDP port, using `/udp` and the end of the port specification, example:
+- `-p 2000/udp`
+- `-p :80/tcp`
+- `-p :8080 #when no protocol specified, assuming tcp`
 
 ### Static public port
 When allocating ports for you containers you could use:
@@ -59,6 +63,7 @@ When allocating ports for you containers you could use:
 
 With 0.5 you can now specify the public port using:
 - `-p 5000:80` to bind the port 80 of the container to the port 5000 on the host
+- `-p 800:2000/udp` to bind the port 2000 of the container to the port 800 on the host using udp
 
 Self-hosted registry
 ---------------------
