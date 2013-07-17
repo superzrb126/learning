@@ -34,7 +34,7 @@ Docker containers are both hardware-agnostic and platform-agnostic. This means t
 Docker is an open-source implementation of the deployment engine which powers [dotCloud](http://www.dotcloud.com), a popular Platform-as-a-Service. It benefits directly from the experience accumulated over several years of large-scale operation and support of hundreds of thousands of applications and databases.
 
 
-0.4.0 summary
+0.5.0 summary
 =============
 
 
@@ -53,7 +53,12 @@ Advanced networking
 *FIXME: UDP port allocation*
 
 *FIXME: static public port*
+When allocating ports for you containers you could use:
+- `-p 80` to bind the port 80 of the container to a random port on the host
+- `-p :80` to bind the port 80 of the container to the same port (80) on the host
 
+With 0.5 you can now specify the public port using:
+- `-p 5000:80` to bind the port 80 of the container to the port 5000 on the host
 
 Self-hosted registry
 ---------------------
