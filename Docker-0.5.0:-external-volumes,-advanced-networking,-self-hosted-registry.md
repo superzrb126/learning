@@ -43,7 +43,7 @@ Externally mounted volumes
 
 In 0.3 we [introduced data volumes](https://github.com/dotcloud/docker/wiki/Docker-0.3.0-release-note%2C-May-6-2013#data-volumes), a great mechanism for manipulating persistent data such as database files, log files, etc.
 
-In addition to sharing [volumes between containers](http://docs.docker.io/en/latest/examples/couchdb_data_volumes.html), you can now share volumes between a container and the underlying host. This makes certain scenarios much easier, such as using a high-performance storage backend for your production database, making live development changes available to a container, etc.
+In addition to [sharing volumes between containers](http://docs.docker.io/en/latest/examples/couchdb_data_volumes.html), you can now share volumes between a container and the underlying host. This makes certain scenarios much easier, such as using a high-performance storage backend for your production database, making live development changes available to a container, etc.
 
 You can also mark parts of your container as persistent volumes at build time, by using the VOLUME instruction in your Dockerfile.
 
