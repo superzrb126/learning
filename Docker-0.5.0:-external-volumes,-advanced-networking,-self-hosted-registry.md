@@ -27,12 +27,7 @@ Contents
 What is Docker?
 ===============
 
-[Docker](http://docker.io) is an open-source engine which automates the deployment of applications as highly portable, self-sufficient containers.
-
-Docker containers are both hardware-agnostic and platform-agnostic. This means that they can run anywhere, from your laptop to the largest EC2 compute instance and everything in between - and they don't require that you use a particular language, framework or packaging system. That makes them great building blocks for deploying and scaling web apps, databases and backend services without depending on a particular stack or provider.
-
-Docker is an open-source implementation of the deployment engine which powers [dotCloud](http://www.dotcloud.com), a popular Platform-as-a-Service. It benefits directly from the experience accumulated over several years of large-scale operation and support of hundreds of thousands of applications and databases.
-
+[Docker](http://docker.io) is a open-source application container engine. It gives developers a way to package their app and all its dependencies into a portable container which can be deployed on any modern Linux machine, virtualized or not. Containers are completely sandboxed and do not interfere with each other (think "iPhone apps for the server"), have virtually no performance overhead, and can easily be moved across machines and datacenters. Best of all, they don't depend on any language, framework or packaging system.
 
 0.5.0 summary
 =============
