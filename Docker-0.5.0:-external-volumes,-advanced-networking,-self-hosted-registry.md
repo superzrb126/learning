@@ -52,7 +52,7 @@ Advanced networking
 
 *FIXME: UDP port allocation*
 
-### Specify public port
+### Static public port
 When allocating ports for you containers you could use:
 - `-p 80` to bind the port 80 of the container to a random port on the host
 - `-p :80` to bind the port 80 of the container to the same port (80) on the host
