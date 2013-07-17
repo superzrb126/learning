@@ -50,20 +50,26 @@ You can also mark parts of your container as persistent volumes at build time, b
 Advanced networking
 -------------------
 
-### UDP port allocation
-Your are now able to allocate UDP port, using `/udp` and the end of the port specification, example:
-- `-p 2000/udp`
-- `-p :80/tcp`
-- `-p :8080 #when no protocol specified, assuming tcp`
+### Static port allocation
 
-### Static public port
-When allocating ports for you containers you could use:
-- `-p 80` to bind the port 80 of the container to a random port on the host
-- `-p :80` to bind the port 80 of the container to the same port (80) on the host
+You now have the option to specify which public port should be redirected to your container. If you don't specify a public port, docker will revert to its usual method and allocate a random public port for you.
+
+- `-p 80:5000` redirects public port 80 to private port 80
+- `-p 80` redirects a random public port to private port 80
+
+
 
 With 0.5 you can now specify the public port using:
 - `-p 5000:80` to bind the port 80 of the container to the port 5000 on the host
 - `-p 800:2000/udp` to bind the port 2000 of the container to the port 800 on the host using udp
+
+### UDP port allocation
+
+You can now redirect both UDP ports and TCP ports to your container. To specify a UDP port, simply add the suffix '/udp' to your port specification. For example:
+
+- `-p 2000/udp` redirects a random public UDP port to private UDP port 8000
+- `-p 80:80/tcp` redirects public port 80/TCP to private port 80/TCP
+- `-p 80:80` also redirects public port 80/TCP to private port 80/TCP
 
 Self-hosted registry
 ---------------------
