@@ -71,7 +71,7 @@ You can now redirect both UDP ports and TCP ports to your container. To specify 
 Self-hosted registry
 ---------------------
 
-FIXME: Needs review
+This release includes major improvements to the self-hosted registry. It is now much easier to store and distribute docker images privately within your organization. You can also combine multiple registries to reflect your organization: for example, you might store your open-source images on the public registry, company-wide base images on a company-wide registry, application nightly builds in a team-specific registry, and so on.
 
 Setting up your own registry requires installing the Python application [docker-registry](https://github.com/dotcloud/docker-registry). This operates completely independently from the Central Registry where you push and pull public repositories (like `ubuntu` and `samalba/hipache`), and it also operates completely independently from the [Central Index](https://index.docker.io). That means your self-hosted registry is private and not searchable. You can decide who has access to it by controlling access to the server where you run it.
 
