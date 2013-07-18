@@ -55,7 +55,7 @@ When redirecting a port to a container, you can now specify *which* public port 
 
 For example:
 
-- `-p 80:5000` redirects public port 80 to private port 80
+- `-p 80:5000` redirects public port 80 to private port 5000
 - `-p 80` redirects a random public port to private port 80
 
 
