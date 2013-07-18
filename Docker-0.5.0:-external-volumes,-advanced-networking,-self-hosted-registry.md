@@ -96,6 +96,16 @@ And that's it! No other configuration necessary.
 What's next?
 ============
 
+Plugin API
+----------
+
+We want Docker to run everywhere, and to integrate with every devops tool. Those are ambitious goals, and the only way to reach them is with the Docker community. For the community to participate fully, we need an API which allows Docker to be deeply and easily customized.
+
+We are working on a plugin API which will make Docker very, very customization-friendly. We believe it will facilitate the integrations listed above - and many more we didn't even think about.
+
+Let us know if you want to start playing with the API before it's generally available. And if you're in the San Francisco area, make sure to drop by [our next hack day](http://www.meetup.com/Docker-meetups/events/127801022/) for a sneak preview!
+
+
 Broader kernel support
 ----------------------
 
@@ -127,14 +137,6 @@ Expect Docker to integrate with even more of your favorite tools going forward, 
 * Infrastructure deployment tools like [Openstack](http://openstack.org), [Apache Cloudstack](http://apache.cloudstack.org), [Ganeti](https://code.google.com/p/ganeti/)
 
 
-Plugin API
-----------
-
-We want Docker to run everywhere, and to integrate with every devops tool. Those are ambitious goals, and the only way to reach them is with the Docker community. For the community to participate fully, we need an API which allows Docker to be deeply and easily customized.
-
-We are working on a plugin API which will make Docker very, very customization-friendly. We believe it will facilitate the integrations listed above - and many more we didn't even think about.
-
-Let us know if you want to start playing with the API before it's generally available. And if you're in the San Francisco area, make sure to drop by [our next hack day](http://www.meetup.com/Docker-meetups/events/127801022/) for a sneak preview!
 
 
 Better documentation
