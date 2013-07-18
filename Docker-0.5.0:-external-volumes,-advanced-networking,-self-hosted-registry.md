@@ -40,6 +40,10 @@ In 0.3 we [introduced data volumes](https://github.com/dotcloud/docker/wiki/Dock
 
 In addition to [sharing volumes between containers](http://docs.docker.io/en/latest/examples/couchdb_data_volumes.html), you can now share volumes between a container and the underlying host. This makes certain scenarios much easier, such as using a high-performance storage backend for your production database, making live development changes available to a container, etc.
 
+To mount an external volume into a container, simply prepend the volume name with a source location:
+
+    docker run -v /mnt/data_on_host:/var/lib/couchdb shykes/couchdb
+
 You can also initialize volumes in your container at build time, by using the VOLUME instruction in a Dockerfile.
 
 Advanced networking
