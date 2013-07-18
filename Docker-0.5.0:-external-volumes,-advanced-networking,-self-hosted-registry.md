@@ -5,8 +5,8 @@ Dear Dockers,
 
 Today we are happy to introduce a new release of Docker. In addition to numerous stability and usability fixes, this release adds support for external volumes, advanced networking options, a vastly improved self-hosted registry, and dozens of other improvements.
 
-Contents
-========
+Content
+=======
 
 * What is Docker?
 * 0.5.0 summary
