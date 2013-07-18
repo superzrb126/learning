@@ -51,7 +51,7 @@ Advanced networking
 
 ### Static port allocation
 
-When redirecting a port to a container, you can now specify *which* public port to redirect. If you don't specify a public port, docker will revert to allocating a random public port.
+When redirecting a port to a container, you can now specify *which* public port to redirect. If you don't specify a public port, Docker will revert to allocating a random public port.
 
 For example:
 
