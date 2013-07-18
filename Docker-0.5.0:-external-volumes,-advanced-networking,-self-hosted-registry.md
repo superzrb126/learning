@@ -150,9 +150,7 @@ If you have feedback on how to improve our documentation, please get in touch by
 Production-ready
 ----------------
 
-Docker is still alpha software, and not suited for production. We are working hard to get there, and we are confident that it will be possible within a few months.
-
-
+Docker is still beta software, and not suited for production. We are working hard to get there, and we are confident that it will be possible within a few months. Stay tuned for a more detailed roadmap soon.
 
 
 How you can help
