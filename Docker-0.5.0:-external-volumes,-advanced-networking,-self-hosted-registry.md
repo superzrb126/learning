@@ -71,27 +71,27 @@ You can now redirect both UDP ports and TCP ports to your container. To specify 
 Self-hosted registry
 ---------------------
 
-This release includes major improvements to the self-hosted registry. It is now much easier to store and distribute docker images privately within your organization. You can also combine multiple registries to reflect your organization: for example, you might store your open-source images on the public registry, company-wide base images on a company-wide registry, application nightly builds in a team-specific registry, and so on.
+This release includes major improvements to the [self-hosted registry](https://github.com/dotcloud/docker-registry). It is now much easier to store and distribute docker images privately within your organization. You can also combine multiple registries to reflect your organization: for example, you might store your open-source images on the public registry, company-wide base images on a company-wide registry, application nightly builds in a team-specific registry, and so on.
 
-Setting up your own registry requires installing the Python application [docker-registry](https://github.com/dotcloud/docker-registry). This operates completely independently from the Central Registry where you push and pull public repositories (like `ubuntu` and `samalba/hipache`), and it also operates completely independently from the [Central Index](https://index.docker.io). That means your self-hosted registry is private and not searchable. You can decide who has access to it by controlling access to the server where you run it.
+Self-hosted registries are completely independent of the [public registry](http://index.docker.io): images stored on it are completely private and not publicly searchable or accessible in any way. You can control access to your registry using standard HTTP proxying and authentication.
 
-To push or pull to a repository on your own registry, you must prefix the tag with the
-address of the registry's host, like this:
+To find out which registry an image comes from, simply look at its name: the URL of the registry is used as a prefix. For example, `images.myorganization.com/ubuntu` refers to an image in the `images.myorganization.com` registry. Image names with no URL, like `ubuntu` or `shykes/couchdb` always refer to the public registry.
+
+To pull an image from a registry, simply include the registry url in the image name:
+
+    docker pull myregistry.mydomain.com/myapp
+
+Conversely, to push an image to a registry, you must first tag it with the appropriate name:
 
     # Tag to create a repository with the full registry location.
-    # The location (e.g. localhost.localdomain:5000) becomes
+    # The location (e.g. myregistry.mydomain.com) becomes
     # a permanent part of the repository name
-    docker tag 0u812deadbeef localhost.localdomain:5000/repo_name
+    docker tag 0u812deadbeef myregistry.mydomain.com/myapp
 
-    # Push the new repository to its home location on localhost
-    docker push localhost.localdomain:5000/repo_name
+    # Push the new repository to its home location
+    docker push myregistry.mydomain.com/myapp
 
-Once a repository has your registry's host name as part of the tag,
-you can push and pull it like any other repository, but it will
-**not** be searchable (or indexed at all) in the Central Index, and
-there will be no user name checking performed. Your registry will
-function completely independently from the Central Index.
-
+And that's it! No other configuration necessary.
 
 What's next?
 ============
