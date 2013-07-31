@@ -3,7 +3,6 @@ Docker has volumes which can be reused from container to container. These volume
 * they can't be imported and exported (without piping data into and out of the container)
 * they can't be backed up and restored from backups (without piping data into and out of the container)
 * they can't be stored on custom storage (e.g.: use high IOPS storage for a volume and regular IOPS storage for others)
-* they can't be used for exposing data from the host into the container during runtime
 * it's not possible to cherry pick the volumes to be used from an old container in a new container
 * it's not possible to manage the volumes after deleting the containers to which they were attached
 
@@ -20,14 +19,7 @@ Backups should keep the metadata of the volumes.
 
 **Exposing volumes to the host**
 
-It should be possible to allow the host to perform all sorts of operations on the volume when needed.
-For example, we could bind mount a volume from its location to a custom location on the host even when a container is running.
-example:
-```
-docker bind-volume <container_id> /container/volume/as/path /host/location/where/we/bind/mount/to
-container volume remains where docker stores it
-docker unbind-volume /host/location/where/we/bind/mount/to
-```
+This has been implemented via bind mounts.
 
 **Import and export**
 
