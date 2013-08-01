@@ -16,6 +16,7 @@ We should have a list of external resources that talk about docker.
   - http://thechangelog.com/89/
   - http://foodfightshow.org/2013/04/docker-the-linux-container-runtime.html
   - http://trafficandweather.io/posts/2013/5/12/episode-11-
+  - http://www.youtube.com/watch?v=3N3n9FzebAA dotScale 2013 - Solomon Hykes - Why we built Docker
   
 3. articles
    - http://www.infoq.com/news/2013/03/Docker
