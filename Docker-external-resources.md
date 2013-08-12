@@ -109,3 +109,5 @@ by Preston Holmes
 https://github.com/ptone/jiffylab
 
 http://jeelabs.org/2013/06/26/packaged-but-not-virtualised/
+
+**Docker and Runit integration** (UNIX signal handling, output redirection): https://github.com/lgierth/docker-exec
