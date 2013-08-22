@@ -1,5 +1,9 @@
 Docker restricts (a lot!) the capabilities of the containers it runs.
 Some of those capabilities are needed in order to run "sub-containers".
+Using the `-privileged` flag (introduced in 0.6), it is now possible
+(and relatively easy) to run Docker within Docker. It is even possible
+to run Docker within Docker within Docker.
+
 Here is a list of the things that have to be done in order to run
 Docker (and containers) within a Docker container.
 
@@ -8,7 +12,9 @@ Docker (and containers) within a Docker container.
 
 You need `net_raw` (for `iptables`), and `sys_admin` (for namespaces,
 and possibly many other things).
-required
+
+`-privileged` addresses this.
+
 
 ## AppArmor
 
@@ -25,9 +31,11 @@ If you want, you can also try to be fine-grained; you will at least need
 to enable AUFS mounts (`mount fstype=aufs`) but there will be other things
 to do.
 
-**Note:** the situation might be better (and the file names might have
-changed) in more recent Ubuntu releases since more people expressed interest
-in nested LXC containers.
+**Note:** on my Ubuntu LTS 12.04 test machine, Docker-in-Docker worked
+out of the box. However, I got reports that it didn't work on 13.04
+because of some AppArmor issues. This is very curious, since newer versions
+were supposed to improve the situation for nested LXC containers.
+
 
 ## `/var/lib/docker`
 
@@ -48,6 +56,12 @@ Sometimes, if `cgroups-mount` doesn't work, you can try:
 
 It worked all the time for me.
 
+In my [dind](https://github.com/jpetazzo/dind) implementation, I wrote
+a small wrapper script to manually mount cgroups before starting the
+Docker daemon.
+
+Of course, this requires the `-privileged` flag.
+
 
 ## Patched `lxc-start`
 
@@ -65,11 +79,25 @@ For the record, I had to manually patch `src/lxc/start.c`; around line 599,
 get rid of the `SYSERROR("failed to remove CAP_SYS_BOOT capability")` error
 message.
 
+However, with more recent versions of the LXC tools, this is no longer necessary!
+This section is kept just for historical purposes.
+
+
 ## Final touch-ups
 
 Make sure that:
 
 - you have a bridge in the container
+  (well, the Docker daemon should automatically take care of that!)
 - `/var/lib/docker` is not AUFS
 - cgroups are mounted
 - you have a patched LXC *inside* the container
+  (this is no longer necessary)
+
+
+## dind
+
+[dind](https://github.com/jpetazzo/dind) is Docker-in-Docker; it's a  Dockerfile
+and wrapper script to provide Docker in Docker easily. Don't hesitate to try it,
+and if it doesn't work for you, please report your Docker version, OS version,
+kernel version, so we can fix it!
