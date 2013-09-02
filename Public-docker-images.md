@@ -254,3 +254,7 @@ docker run audreyt/ethercalc
 # Runs at another port, for example 8080
 docker run -p 8080:6967 audreyt/ethercalc
 ```
+
+### [Discourse](http://www.discourse.org/) (with Redis + Postgresql + Sidekiq + Nginx)
+
+A modern forum engine. Instructions to run the five containers at https://github.com/srid/discourse-docker
