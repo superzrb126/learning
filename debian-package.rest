@@ -1,11 +1,13 @@
-::
+You need at least **jessie (debian/testing)** for Go 1.1.1 (latest Go 1.1.x is recommended)
 
+```
   sudo apt-get update
   sudo apt-get install -y debhelper build-essential autotools-dev golang
   git clone https://github.com/dotcloud/docker
   cd docker/packaging/debian
   make debian
   sudo dpkg -i lxc-docker_*-1_amd64.deb; sudo apt-get install -f -y
+```
 
 You'll want to edit `/etc/default/grub` to enable cgroup memory and swap accounting.
 
@@ -24,7 +26,7 @@ GRUB_CMDLINE_LINUX="cgroup_enable=memory swapaccount"
 Then update your grub configuration like so. 
 
 ```
-sudo grub-mkconfig -o /boot/grub/grub.cfg
+sudo update-grub2
 ```
 
 Before rebooting add the following line to `/etc/fstab`
@@ -33,8 +35,7 @@ Before rebooting add the following line to `/etc/fstab`
 cgroup  /sys/fs/cgroup  cgroup  defaults  0   0
 ```
 
-You should now have docker setup, but it will require a reboot for the cgroup changes to take affect.
+You should now have docker setup, but it will require a reboot for the cgroup changes to take effect.
 
 Once rebooted docker should be running. You can now run commands against it using `lxc-docker` If it's not running you can start it with the init script `/etc/init.d/lxc-docker start`
 
- 
