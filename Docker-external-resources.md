@@ -11,6 +11,7 @@ We should have a list of external resources that talk about docker.
    - http://flavio.castelli.name/2013/04/12/docker-and-opensuse/
    - http://kuhnza.com/2013/03/27/docker-makes-creating-secure-sandboxes-easier-than-ever/
    - http://thechangelog.com/docker-from-dotcloud-is-now-open-source-the-future-of-linux-containers/
+   - http://txt.fliglio.com/2013/09/protyping-web-stuff-with-docker/
 
 2. podcasts, and videos
   - http://thechangelog.com/89/
