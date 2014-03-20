@@ -12,6 +12,7 @@ This page lists projects and interesting material that use docker. Some of them 
 * [Multi-tenant, API-provisionable memcached cloud service example](https://github.com/jbarbier/SaaS_Memcached) - [http://memcachedasaservice.com/](http://memcachedasaservice.com/)
 * [NodeJS OpenCV bindings w/ all deps](https://github.com/peterbraden/node-opencv)
 * [Python web app builder](https://github.com/dotcloud/docker/wiki/Public-docker-images#python-app-builder)
+* [Build native RPMs for RHEL using docker](https://github.com/alanfranz/docker-rpm-builder)
 
 ## Presentations and blog posts
 
