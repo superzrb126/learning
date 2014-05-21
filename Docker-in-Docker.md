@@ -1,6 +1,6 @@
 Docker restricts (a lot!) the capabilities of the containers it runs.
 Some of those capabilities are needed in order to run "sub-containers".
-Using the `-privileged` flag (introduced in 0.6), it is now possible
+Using the `--privileged` flag (introduced in 0.6), it is now possible
 (and relatively easy) to run Docker within Docker. It is even possible
 to run Docker within Docker within Docker.
 
@@ -13,7 +13,7 @@ Docker (and containers) within a Docker container.
 You need `net_raw` (for `iptables`), and `sys_admin` (for namespaces,
 and possibly many other things).
 
-`-privileged` addresses this.
+`--privileged` addresses this.
 
 
 ## AppArmor
@@ -60,7 +60,7 @@ In my [dind](https://github.com/jpetazzo/dind) implementation, I wrote
 a small wrapper script to manually mount cgroups before starting the
 Docker daemon.
 
-Of course, this requires the `-privileged` flag.
+Of course, this requires the `--privileged` flag.
 
 
 ## Patched `lxc-start`
