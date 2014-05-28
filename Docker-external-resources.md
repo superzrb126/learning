@@ -3,6 +3,7 @@ Copied from issue #614 opened by @kencochrane.
 We should have a list of external resources that talk about docker.
 
 1. blog posts
+   - http://blog.shrikrishnaholla.in/post/2014/01/12/docker-the-good-parts/
    - http://robknight.org.uk/blog/2013/05/drupal-on-docker/
    - http://forge.puppetlabs.com/garethr/docker
    - http://kencochrane.net/blog/2013/05/running-docker-on-rackspace-cloud/
