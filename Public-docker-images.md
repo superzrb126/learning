@@ -259,7 +259,7 @@ docker run -p 8080:6967 audreyt/ethercalc
 
 A modern forum engine. Instructions to run the five containers at https://github.com/srid/discourse-docker
 
-### [Gitlab](gitlab.org)
+### [GitLab](https://www.gitlab.com/)
 
 Open-Source github clone.
 
