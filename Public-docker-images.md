@@ -44,6 +44,15 @@ docker pull ubuntu:12.10
 docker pull ubuntu:12.04
 ```
 
+### openSUSE Linux base image
+
+```
+docker pull opensuse:latest
+```
+and tags
+```
+docker pull opensuse:13.1
+```
 
 ### Centos 6.4 base image
 
