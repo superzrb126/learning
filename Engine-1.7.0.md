@@ -15,4 +15,4 @@
 * [Remove engine jobs](https://github.com/docker/docker/issues/12151)
 * [Rewrite the volumes subsystem](https://github.com/docker/docker/pull/13161)
 * [Vendoring libnetwork](https://github.com/docker/docker/pull/13060)
-* [Refactoring] [Vendoring distribution](https://github.com/docker/docker/pull/13375)
+* [Vendoring distribution](https://github.com/docker/docker/pull/13375)
