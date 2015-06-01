@@ -2,4 +2,4 @@ Docker Engine roadmap items are filed on the issue tracker, labeled as [`roadmap
 
 ### 1.7.0 goals (June 2015 release)
 
-* Removing engine jobs
+* [Refactoring] [Remove engine jobs](https://github.com/docker/docker/issues/12151)
