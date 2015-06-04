@@ -4,8 +4,6 @@ The Docker follows a **time-based** release process, currently aiming at releasi
 
 Even though the process is time-based, the Docker Engine sets short-term goals for the upcoming release(s). However, time will always win over features: the code freeze will happen regardless of our goals being met.
 
-See the current and past [Engine goals](https://github.com/docker/docker/wiki/Engine-roadmap).
-
 # Roadmap
 
 Docker Engine roadmap items are filed on the issue tracker with the [`roadmap`](https://github.com/docker/docker/issues?q=is%3Aopen+is%3Aissue+label%3Aroadmap) label. They are open to community participation: join us on the [usual communication channels](https://github.com/docker/docker#talking-to-other-docker-users-and-contributors) to contribute!
