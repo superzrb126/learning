@@ -1,6 +1,6 @@
 ### Resources
 
-* [Engine Roadmap](https://github.com/docker/docker/wiki/Engine-roadmap)
+* 
 
 ### Process
 
