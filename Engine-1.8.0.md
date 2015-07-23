@@ -7,5 +7,5 @@
 
  - Improved `docker cp` [#14058](https://github.com/docker/docker/pull/14058)
  - Distribution refactoring [#13375](https://github.com/docker/docker/pull/13375)
- - Ship volume plugins in stable
- - Preliminary Notary integration
+ - Ship volume plugins in stable [#14659](https://github.com/docker/docker/pull/14659)
+ - Preliminary Notary integration [#14546](https://github.com/docker/docker/pull/14546)
