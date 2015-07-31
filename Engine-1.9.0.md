@@ -5,7 +5,7 @@
 
 # 1.9.0 - Release goals
 
-## [#15187](https://github.com/docker/docker/issues/15187) User namespaces
+### [#15187](https://github.com/docker/docker/issues/15187) User namespaces
 
 User namespaces are a long awaited feature, on which [Phil Estes (@estesp)](https://github.com/estesp) did some amazing work (see [#12648](https://github.com/docker/docker/pull/12648)). Unfortunately, the integration unexpectedly conflicted with the recent introduction of [`libnetwork`](https://github.com/docker/libnetwork).
 
@@ -13,7 +13,7 @@ We want to fix this for 1.9.0 and be able to merge Phil's work, which means:
 - All containers have their own user namespace (effectively preventing the use of `--net=host` or `--net=container:<id>`).
 - A daemon-wide setting remaps the root user for all containers.
 
-## [#14298](https://github.com/docker/docker/issues/14298) Client-side builder
+### [#14298](https://github.com/docker/docker/issues/14298) Client-side builder
 
 As explained in the [roadmap document](https://github.com/docker/docker/blob/master/ROADMAP.md#122-builder), we want to enable client-side build.
 
