@@ -17,7 +17,7 @@ We want to fix this for 1.9.0 and be able to merge Phil's work, which means:
 
 We would like to rewrite our API, not to change the endpoint in a first phase, but at least to have a better, typed, self-documented, versioned version of the Docker API that we could share between Engine and Swarm.
 
-#### [#14298](https://github.com/docker/docker/issues/14298) Client-side builder
+#### [#14298](https://github.com/docker/docker/issues/14298) Progress towards a client-side builder
 
 As explained in the [roadmap document](https://github.com/docker/docker/blob/master/ROADMAP.md#122-builder), we want to enable client-side build.
 
