@@ -1,7 +1,7 @@
 # Schedule
 
-* Freeze: 2015-09-22
-* Release: 2015-10-13
+* Freeze: 2015-10-08
+* Release: 2015-10-29
 
 # 1.9.0 - Release goals
 
