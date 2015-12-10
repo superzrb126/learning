@@ -13,7 +13,6 @@ Docker Engine roadmap items are filed on the issue tracker with the [`roadmap`](
 |------------------|-------------|-----------------|-------|
 | Docker 1.10.0     | 01/14/2016  | **[@tonistiigi](https://github.com/tonistiigi)**                | [Engine 1.10.0](https://github.com/docker/docker/wiki/Engine-1.10.0) |
 | Docker 1.9.0     | 10/29/2015  | **[@tiborvass](https://github.com/tiborvass)**                | [Engine 1.9.0](https://github.com/docker/docker/wiki/Engine-1.9.0) |
-| Docker 1.9.0     | 10/29/2015  | **[@tiborvass](https://github.com/tiborvass)**                | [Engine 1.9.0](https://github.com/docker/docker/wiki/Engine-1.9.0) |
 | Docker 1.8.0     | 08/11/2015  | **[@calavera](https://github.com/calavera)**             | [Engine 1.8.0](https://github.com/docker/docker/wiki/Engine-1.8.0) |
 | Docker 1.7.0     | 06/18/2015  | **[@vieux](https://github.com/vieux)**         | [Engine 1.7.0](https://github.com/docker/docker/wiki/Engine-1.7.0) |
 | Docker 1.6.0     | 04/16/2015  | **[@jfrazelle](https://github.com/jfrazelle)** |       |
