@@ -27,7 +27,7 @@ All your current images, tags and containers are automatically migrated to the n
 
 While this is simple operation, calculating SHA256 checksums for your files can take time if you have lots of image data. On average you should assume that migrator can process data at a speed of 100MB/s. During this time your Docker daemon won’t be ready to respond to requests.
 
-##M inimizing migration time
+## Minimizing migration time
 
 If you can accept this one time hit, then upgrading Docker Engine and restarting the daemon will transparently migrate your images. However, if you want to minimize the daemon's downtime, a migration utility can be run while your old daemon is still running.
 
