@@ -1,4 +1,4 @@
-# Docker Engine 1.10 on-disk images migration
+# Docker Engine 1.10 migration
 
 TL;DR;
 
