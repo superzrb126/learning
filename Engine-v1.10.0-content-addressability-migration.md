@@ -1,11 +1,11 @@
-# Docker Engine 1.10 migration
-
 TL;DR;
 
 - More secure foundation for referencing images and layers
 - New distribution manifest and pull features
 - Upgrading old images will include a migration step
 - A migration tool exists in order to minimize migration time
+
+## Understanding 1.10 migration
 
 This post describes the upcoming changes to the way Docker Engine stores images and filesystem data in containers. These changes are coming to users starting from version v1.10. (FIXME: link to download rc1)
 
