@@ -7,7 +7,7 @@ TL;DR;
 
 ## Understanding 1.10 migration
 
-This post describes the upcoming changes to the way Docker Engine stores images and filesystem data in containers. These changes are coming to users starting from version v1.10. (FIXME: link to download rc1)
+This post describes the upcoming changes to the way Docker Engine stores images and filesystem data in containers. These changes are coming to users starting from version v1.10.
 
 Starting from v1.10 we completely change the way Docker  addresses the image data on disk. Previously, every image and layer used a randomly assigned UUID, now we have implemented a content addressable method using an ID that is based on a secure hash of the image and layer data.
 
@@ -17,7 +17,7 @@ Addressing images by their content also lets us more easily detect if something 
 
 Content addressability is the foundation for the new distribution features. The image pull and push code has been reworked to use a download/upload manager concept that makes `push` and `pull` much more stable and mitigate any parallel requests issues. Download manager also brings retries on failed downloads and better prioritization for concurrent downloads.
 
-We are also introducing a new manifest format that is built on top of the content addressable base. It directly references the content addressable image configuration and layer checksums. The new manifest format also makes it possible for a manifest list to be used for targeting multiple architectures/platforms (...more to come on that later). Moving to the new manifest format will be completely transparent. If the registry you are using supports the new manifest format, Docker will start using it on pushes. Newer registries (2.3) have a built in converter that makes the new manifests also available to older daemons. For users using Docker Hub or Trusted Registry...
+We are also introducing a new manifest format that is built on top of the content addressable base. It directly references the content addressable image configuration and layer checksums. The new manifest format also makes it possible for a manifest list to be used for targeting multiple architectures/platforms (...more to come on that later). Moving to the new manifest format will be completely transparent. If the registry you are using supports the new manifest format, Docker will start using it on pushes. Newer registries (2.3) have a built in converter that makes the new manifests also available to older daemons.
 
 ## Preparing for upgrade
 
@@ -35,6 +35,6 @@ This program will find all your current images and calculate the checksums for t
 
 You can get it from https://github.com/docker/v1.10-migrator/releases.
 
-The migration tool can also be run as a Docker image. While running the migrator image you need to expose your Docker data directory to the container. If you use the default path then it would look like `docker run --rm -v /var/lib/docker:/var/lib/docker docker/docker-1.10-migrator`. If you use the devicemapper storage driver, you also need to include `--privileged` to give the tool access to your storage devices.
+The migration tool can also be run as a Docker image. While running the migrator image you need to expose your Docker data directory to the container. If you use the default path then it would look like `docker run --rm -v /var/lib/docker:/var/lib/docker docker/v1.10-migrator`. If you use the devicemapper storage driver, you also need to include `--privileged` to give the tool access to your storage devices.
 
 Docker Engine 1.10 Release Candidate is now available.  Try it out and make sure to file any issues and send feedback.
