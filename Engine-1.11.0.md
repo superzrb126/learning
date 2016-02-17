@@ -7,14 +7,16 @@
 
 #### [#20361](https://github.com/docker/docker/issues/20361) Containerd integration
 
-Replace execdrivers with containerd
+Replace execdrivers with containerd.
 
 #### [#20362](https://github.com/docker/docker/issues/20362) CLI separation
 
-Separate the docker client cli from the docker daemon
+Separate the docker client cli from the docker daemon.
 
 #### [#20363](https://github.com/docker/docker/issues/20363) Better Plugins Framework
 
-Bake plugin management capabilities inside docker
+Bake plugin management capabilities inside docker.
 
+#### Miscellaneous
 
+- [#20356](https://github.com/docker/docker/issues/20356) Label for non-container resources
