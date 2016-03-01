@@ -21,7 +21,9 @@ Bake plugin management capabilities inside docker.
 
 - [#20356](https://github.com/docker/docker/issues/20356) Label for non-container resources
 
-# WIP: Changelog (last update: 2016/03/01 10.28am)
+# WIP: Changelog
+
+_(last update: 2016/03/01 10.28am)_
 
 * `docker login` will no longer prompt for an email ([#20565](https://github.com/docker/docker/pull/20565))
 * Output of `docker volume ls` is now sorted by volume name ([#20389](https://github.com/docker/docker/pull/20389))
