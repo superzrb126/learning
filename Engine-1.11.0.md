@@ -23,8 +23,11 @@ Bake plugin management capabilities inside docker.
 
 # WIP: Changelog
 
-_(last update: 2016/03/01 10.28am)_
+_(last update: 2016/03/08 08.29am)_
 
+* `docker login` now handles token using the implementation found in [docker/distribution](https://github.com/docker/distribution) ([#20832](https://github.com/docker/docker/pull/20832))
+* `--device` option now correctly resolves symlinks ([#20684](https://github.com/docker/docker/pull/20684))
+* Post processing is no longer enabled for linux-cgo terminals ([#20587](https://github.com/docker/docker/pull/20587))
 * `docker login` will no longer prompt for an email ([#20565](https://github.com/docker/docker/pull/20565))
 * Output of `docker volume ls` is now sorted by volume name ([#20389](https://github.com/docker/docker/pull/20389))
 * Output of `docker network ls` is now sorted by network name ([#20383](https://github.com/docker/docker/pull/20383))
