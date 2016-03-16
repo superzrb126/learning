@@ -33,16 +33,22 @@ _(last update: 2016/03/08 08.29am)_
 * `docker login` will no longer prompt for an email ([#20565](https://github.com/docker/docker/pull/20565))
 * Output of `docker volume ls` is now sorted by volume name ([#20389](https://github.com/docker/docker/pull/20389))
 * Output of `docker network ls` is now sorted by network name ([#20383](https://github.com/docker/docker/pull/20383))
-* Docker now supports external credential stores ([#20107](https://github.com/docker/docker/pull/20107))
-* `docker ps` now supports displaying the list of volumes mounted inside a container ([#20017](https://github.com/docker/docker/pull/20017))
 
 ### Distribution
 
 * `docker login` now handles token using the implementation found in [docker/distribution](https://github.com/docker/distribution) ([#20832](https://github.com/docker/docker/pull/20832))
 * Docker will now try to resume layer download where it left timeout after a network error/timeout ([#19840](https://github.com/docker/docker/pull/19840))
 
+### Client
+
+* `docker ps` now supports displaying the list of volumes mounted inside a container ([#20017](https://github.com/docker/docker/pull/20017))
+* `docker info` now also report Docker's root directory location ([#19986](https://github.com/docker/docker/pull/19986))
+
+
 ### Runtime
 
+* Docker now allows executing privileged container while running with `--userns-remap` if both `--privileged` and the new `--userns=host` flag are specified ([#20111](https://github.com/docker/docker/pull/20111))
+* Docker now supports external credential stores ([#20107](https://github.com/docker/docker/pull/20107))
 * Fix Docker not cleaning up correctly old containers upon restarting after a crash ([#19679](https://github.com/docker/docker/pull/19679))
 * `docker update` learned how to change a container restart policy ([#19116](https://github.com/docker/docker/pull/19116))
 * `docker inspect` now also returns a new `State` field containing the container state in a human readable way (i.e. one of `created`, `restarting`, `running`, `paused`, `exited` or `dead`)([#18966](https://github.com/docker/docker/pull/18966))
