@@ -28,25 +28,33 @@ _(last update: 2016/03/08 08.29am)_
 **IMPORTANT**: With Docker 1.11, a docker installation is now made of 4 binaries (`docker`, `containerd`, `containerd-shim` and `runc`). If you have scripts relying on docker being a single static binaries, please make sure to update them. Interaction with the daemon stay the same otherwise, the usage of the other binaries should be transparent.
 
 
-* `--device` option now correctly resolves symlinks ([#20684](https://github.com/docker/docker/pull/20684))
-* Post processing is no longer enabled for linux-cgo terminals ([#20587](https://github.com/docker/docker/pull/20587))
-* `docker login` will no longer prompt for an email ([#20565](https://github.com/docker/docker/pull/20565))
-* Output of `docker volume ls` is now sorted by volume name ([#20389](https://github.com/docker/docker/pull/20389))
-* Output of `docker network ls` is now sorted by network name ([#20383](https://github.com/docker/docker/pull/20383))
-
 ### Distribution
 
+* `docker login` will no longer prompt for an email ([#20565](https://github.com/docker/docker/pull/20565))
+* Docker will now fallback to registry V1 if no basic auth credentials are available ([#20241](https://github.com/docker/docker/pull/20241))
 * `docker login` now handles token using the implementation found in [docker/distribution](https://github.com/docker/distribution) ([#20832](https://github.com/docker/docker/pull/20832))
 * Docker will now try to resume layer download where it left timeout after a network error/timeout ([#19840](https://github.com/docker/docker/pull/19840))
 
 ### Client
 
+* Post processing is no longer enabled for linux-cgo terminals ([#20587](https://github.com/docker/docker/pull/20587))
 * `docker ps` now supports displaying the list of volumes mounted inside a container ([#20017](https://github.com/docker/docker/pull/20017))
 * `docker info` now also report Docker's root directory location ([#19986](https://github.com/docker/docker/pull/19986))
 
+### Volumes
+
+* Output of `docker volume ls` is now sorted by volume name ([#20389](https://github.com/docker/docker/pull/20389))
+* Local volumes can now accepts options similar to the unix `mount` tool ([#20262](https://github.com/docker/docker/pull/20262))
 
 ### Runtime
 
+* Fix the handling of Docker command when passed a 64 bytes id ([#21002](https://github.com/docker/docker/pull/21002))
+* Docker will now return a `204` (i.e http.StatusNoContent) code when it successfully deleted a network ([#20977](https://github.com/docker/docker/pull/20977))
+* The devmapper driver learn the `dm.min_free_space` option. If the mapped device free space reaches the passed value, new device creation will be prohibited. ([#20786](https://github.com/docker/docker/pull/20786))
+* Docker can now prevent processes in container to gain new privileges via the `--security-opt=no-new-privileges` flag ([#20727](https://github.com/docker/docker/pull/20727))
+* Starting a container with the `--device` option will now correctly resolves symlinks ([#20684](https://github.com/docker/docker/pull/20684))
+* Fix docker configuration reloading to only alter value present in the given config file ([#20604](https://github.com/docker/docker/pull/20604))
+* Docker now allows setting a container hostname via the `--hostname` flag ([#20177](https://github.com/docker/docker/pull/20177))
 * Docker now allows executing privileged container while running with `--userns-remap` if both `--privileged` and the new `--userns=host` flag are specified ([#20111](https://github.com/docker/docker/pull/20111))
 * Docker now supports external credential stores ([#20107](https://github.com/docker/docker/pull/20107))
 * Fix Docker not cleaning up correctly old containers upon restarting after a crash ([#19679](https://github.com/docker/docker/pull/19679))
@@ -56,7 +64,8 @@ _(last update: 2016/03/08 08.29am)_
 
 ### Logging
 
-* Docker GELF log driver now allows to specify the compression algorithm and level via the `gelf-compression-type` and `gelf-compression-level` options ([19831](https://github.com/docker/docker/pull/19831))
+* Docker syslog driver now uses the RFC-5424 format when emitting logs ([#20121](https://github.com/docker/docker/pull/20121)) 
+* Docker GELF log driver now allows to specify the compression algorithm and level via the `gelf-compression-type` and `gelf-compression-level` options ([#19831](https://github.com/docker/docker/pull/19831))
 * Docker daemon learned to output uncolorized logs via the `--raw-logs` options ([#19794](https://github.com/docker/docker/pull/19794))
 * Docker, on Windows platform, now includes an ETW (Event Tracing in Windows) logging driver named `etwlogs` ([#19689](https://github.com/docker/docker/pull/19689))
 * Journald log driver now support the log command tag option ([#19564](https://github.com/docker/docker/pull/19564))
@@ -65,5 +74,6 @@ _(last update: 2016/03/08 08.29am)_
 
 ### Networking
 
+* Output of `docker network ls` is now sorted by network name ([#20383](https://github.com/docker/docker/pull/20383))
 * `docker network inspect` now returns whether a network is internal or not ([#19357](https://github.com/docker/docker/pull/19357))
 * Docker learned to create ipv6 enabled networks (`docker network create --ipv6`). This show up as a new  `EnableIPv6` field in `docker inspect`. ([#17513](https://github.com/docker/docker/pull/17513))
