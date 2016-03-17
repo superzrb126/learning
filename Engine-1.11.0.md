@@ -45,6 +45,8 @@ _(last update: 2016/03/16 17:04, Commit: 2731dbc7977dba00405c974c47c4f079d441a2b
 * Post processing is no longer enabled for linux-cgo terminals ([#20587](https://github.com/docker/docker/pull/20587))
 * `docker ps` now supports displaying the list of volumes mounted inside a container ([#20017](https://github.com/docker/docker/pull/20017))
 * `docker info` now also report Docker's root directory location ([#19986](https://github.com/docker/docker/pull/19986))
+* Docker now prohibits login in with an empty username (spaces are trimmed) ([#19806](https://github.com/docker/docker/pull/19806))
+* Docker now cleans after itself if a save/export command fails ([#17849](https://github.com/docker/docker/pull/17849))
 
 ### Volumes
 
@@ -75,7 +77,7 @@ _(last update: 2016/03/16 17:04, Commit: 2731dbc7977dba00405c974c47c4f079d441a2b
 * Fix a panic that occurred when a `exec` was started multiple times ([#19369](https://github.com/docker/docker/pull/19369)) 
 * `docker update` learned how to change a container restart policy ([#19116](https://github.com/docker/docker/pull/19116))
 * `docker inspect` now also returns a new `State` field containing the container state in a human readable way (i.e. one of `created`, `restarting`, `running`, `paused`, `exited` or `dead`)([#18966](https://github.com/docker/docker/pull/18966))
-* Docker learned to limit the number of active pids (i.e. processes) within the container via the `pids-limit` flags. NOTE: This require `CGROUP_PIDS=y` to be in the kernel configuration. ([#18697](https://github.com/docker/docker/pull/18697))
+* Docker learned to limit the number of active pids (i.e. processes) within the container via the `pids-limit` flags. NOTE: This requires `CGROUP_PIDS=y` to be in the kernel configuration. ([#18697](https://github.com/docker/docker/pull/18697))
 
 ### Logging
 
@@ -83,7 +85,7 @@ _(last update: 2016/03/16 17:04, Commit: 2731dbc7977dba00405c974c47c4f079d441a2b
 * Docker GELF log driver now allows to specify the compression algorithm and level via the `gelf-compression-type` and `gelf-compression-level` options ([#19831](https://github.com/docker/docker/pull/19831))
 * Docker daemon learned to output uncolorized logs via the `--raw-logs` options ([#19794](https://github.com/docker/docker/pull/19794))
 * Docker, on Windows platform, now includes an ETW (Event Tracing in Windows) logging driver named `etwlogs` ([#19689](https://github.com/docker/docker/pull/19689))
-* Journald log driver now support the log command tag option ([#19564](https://github.com/docker/docker/pull/19564))
+* Journald log driver learned how to handle tags ([#19564](https://github.com/docker/docker/pull/19564))
 * Docker learn to send log to Google Cloud via the new `gcplogs` logging driver. ([#18766](https://github.com/docker/docker/pull/18766))
 * The `fluentd` log driver learned to process the new `fail-on-startup-error` log option preventing it to fail a container startup if it can't connect to the backend ([#18041](https://github.com/docker/docker/pull/18041))
 
@@ -99,6 +101,9 @@ _(last update: 2016/03/16 17:04, Commit: 2731dbc7977dba00405c974c47c4f079d441a2b
 ### Security
 
 * `send`, `recv` and `x32` were added to the list of allowed syscalls and arch in the default seccomp profile ([#19432](https://github.com/docker/docker/pull/19432))
+
 ### Misc
 
+* `dockerinit` is no more ([#19490](https://github.com/docker/docker/pull/19490))
+* Support for building docker on arm64 was added ([#19013](https://github.com/docker/docker/pull/19013))
 * Experimental support for building docker.exe in a native Windows Docker installation ([#18348](https://github.com/docker/docker/pull/18348))
