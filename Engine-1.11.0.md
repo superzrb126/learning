@@ -41,6 +41,7 @@ _(last update: 2016/03/16 17:04, Commit: 2731dbc7977dba00405c974c47c4f079d441a2b
 ### Client
 
 * After a brief memory loss, Docker once more learned to report a container PID statistics ([#21150](https://github.com/docker/docker/pull/21150))
+* Fix a bug where some newly started container would not appear in a running `docker stats` command ([#20782](https://github.com/docker/docker/pull/20782))
 * Post processing is no longer enabled for linux-cgo terminals ([#20587](https://github.com/docker/docker/pull/20587))
 * Docker learned how to use a SOCKS proxy ([#20366](https://github.com/docker/docker/pull/20366), [#18373](https://github.com/docker/docker/pull/18373))
 * `docker ps` now supports displaying the list of volumes mounted inside a container ([#20017](https://github.com/docker/docker/pull/20017))
