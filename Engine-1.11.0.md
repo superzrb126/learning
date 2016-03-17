@@ -119,6 +119,7 @@ _(last update: 2016/03/16 17:04, Commit: 2731dbc7977dba00405c974c47c4f079d441a2b
 ### Misc
 
 * Docker, when run as a service with systemd, will now properly manage its processes cgroups ([#20633](https://github.com/docker/docker/pull/20633))
+* Docker info now reports the value of cgroup KernelMemory or emits a warning if it is not supported ([#20863](https://github.com/docker/docker/pull/20863))
 * Docker info now also reports the cgroup driver in use ([#20388](https://github.com/docker/docker/pull/20388))
 * Docker completion is now available on PowerShell ([#19894](https://github.com/docker/docker/pull/19894))
 * `dockerinit` is no more ([#19490](https://github.com/docker/docker/pull/19490),[#19851](https://github.com/docker/docker/pull/19851))
