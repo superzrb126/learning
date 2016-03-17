@@ -98,6 +98,7 @@ _(last update: 2016/03/16 17:04, Commit: 2731dbc7977dba00405c974c47c4f079d441a2b
 
 ### Networking
 
+* Fix a bug where IPV6 addresses were not properly handled ([#20842](https://github.com/docker/docker/pull/20842))
 * `docker network inspect` will now report all endpoints whether they have an active container or not ([#21160](https://github.com/docker/docker/pull/21160))
 * Experimental support for the MacVlan and IPVlan network drivers have been added ([#21122](https://github.com/docker/docker/pull/21122)) 
 * Output of `docker network ls` is now sorted by network name ([#20383](https://github.com/docker/docker/pull/20383))
