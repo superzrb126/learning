@@ -1,7 +1,7 @@
 # Schedule
 
-* Freeze: 2016-03-17
-* Release: 2016-04-07
+* Freeze: 2016-03-22
+* Release: 2016-04-12
 
 # 1.11.0 - Release goals
 
