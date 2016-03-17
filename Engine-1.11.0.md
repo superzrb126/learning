@@ -23,7 +23,7 @@ Bake plugin management capabilities inside docker.
 
 # WIP: Changelog
 
-_(last update: 2016/03/16 17:04)_
+_(last update: 2016/03/16 17:04, Commit: 2731dbc7977dba00405c974c47c4f079d441a2b2)_
 
 **IMPORTANT**: With Docker 1.11, a docker installation is now made of 4 binaries (`docker`, `containerd`, `containerd-shim` and `runc`). If you have scripts relying on docker being a single static binaries, please make sure to update them. Interaction with the daemon stay the same otherwise, the usage of the other binaries should be transparent.
 
@@ -36,6 +36,7 @@ _(last update: 2016/03/16 17:04)_
 * Docker will now fallback to registry V1 if no basic auth credentials are available ([#20241](https://github.com/docker/docker/pull/20241))
 * `docker login` now handles token using the implementation found in [docker/distribution](https://github.com/docker/distribution) ([#20832](https://github.com/docker/docker/pull/20832))
 * Docker will now try to resume layer download where it left timeout after a network error/timeout ([#19840](https://github.com/docker/docker/pull/19840))
+* Fix generated manifest mediaType when pushing cross-repository ([#19509](https://github.com/docker/docker/pull/19509))
 
 ### Client
 
