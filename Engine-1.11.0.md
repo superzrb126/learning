@@ -39,6 +39,7 @@ _(last update: 2016/03/16 17:04)_
 
 ### Client
 
+* `docker ps` no longer show exported port for stopped containers ([#19483](https://github.com/docker/docker/pull/19483))
 * After a brief memory loss, Docker once more learned to report a container PID statistics ([#21150](https://github.com/docker/docker/pull/21150))
 * Post processing is no longer enabled for linux-cgo terminals ([#20587](https://github.com/docker/docker/pull/20587))
 * `docker ps` now supports displaying the list of volumes mounted inside a container ([#20017](https://github.com/docker/docker/pull/20017))
@@ -67,6 +68,7 @@ _(last update: 2016/03/16 17:04)_
 * Docker now allows executing privileged container while running with `--userns-remap` if both `--privileged` and the new `--userns=host` flag are specified ([#20111](https://github.com/docker/docker/pull/20111))
 * Docker now supports external credential stores ([#20107](https://github.com/docker/docker/pull/20107))
 * Fix Docker not cleaning up correctly old containers upon restarting after a crash ([#19679](https://github.com/docker/docker/pull/19679))
+* Fix a panic that would occur when failing to load a layer on store instantiation ([#19458](https://github.com/docker/docker/pull/19458))
 * Fix a panic that occurred when a `exec` was started multiple times ([#19369](https://github.com/docker/docker/pull/19369)) 
 * `docker update` learned how to change a container restart policy ([#19116](https://github.com/docker/docker/pull/19116))
 * `docker inspect` now also returns a new `State` field containing the container state in a human readable way (i.e. one of `created`, `restarting`, `running`, `paused`, `exited` or `dead`)([#18966](https://github.com/docker/docker/pull/18966))
@@ -87,9 +89,13 @@ _(last update: 2016/03/16 17:04)_
 * `docker network inspect` will now report all endpoints whether they have an active container or not ([#21160](https://github.com/docker/docker/pull/21160))
 * Experimental support for the MacVlan and IPVlan network drivers have been added ([#21122](https://github.com/docker/docker/pull/21122)) 
 * Output of `docker network ls` is now sorted by network name ([#20383](https://github.com/docker/docker/pull/20383))
+* Fix a bug where Docker would allow a network to be created with the reserved `default` name ([#19431](https://github.com/docker/docker/pull/19431))
 * `docker network inspect` now returns whether a network is internal or not ([#19357](https://github.com/docker/docker/pull/19357))
 * Docker learned to create ipv6 enabled networks (`docker network create --ipv6`). This show up as a new  `EnableIPv6` field in `docker inspect`. ([#17513](https://github.com/docker/docker/pull/17513))
 
+### Security
+
+* `send`, `recv` and `x32` were added to the list of allowed syscalls and arch in the default seccomp profile ([#19432](https://github.com/docker/docker/pull/19432))
 ### Misc
 
 * Experimental support for building docker.exe in a native Windows Docker installation ([#18348](https://github.com/docker/docker/pull/18348))
