@@ -42,17 +42,20 @@ _(last update: 2016/03/16 17:04, Commit: 2731dbc7977dba00405c974c47c4f079d441a2b
 
 * After a brief memory loss, Docker once more learned to report a container PID statistics ([#21150](https://github.com/docker/docker/pull/21150))
 * Post processing is no longer enabled for linux-cgo terminals ([#20587](https://github.com/docker/docker/pull/20587))
+* Docker learned how to use a SOCKS proxy ([#20366](https://github.com/docker/docker/pull/20366), [#18373](https://github.com/docker/docker/pull/18373))
 * `docker ps` now supports displaying the list of volumes mounted inside a container ([#20017](https://github.com/docker/docker/pull/20017))
 * `docker info` now also report Docker's root directory location ([#19986](https://github.com/docker/docker/pull/19986))
 * Docker now prohibits login in with an empty username (spaces are trimmed) ([#19806](https://github.com/docker/docker/pull/19806))
 * Docker events attributes are now sorted by key ([#19761](https://github.com/docker/docker/pull/19761))
 * `docker ps` no longer show exported port for stopped containers ([#19483](https://github.com/docker/docker/pull/19483))
 * Docker now cleans after itself if a save/export command fails ([#17849](https://github.com/docker/docker/pull/17849))
+* Docker load learned how to display a progress bar ([#17329](https://github.com/docker/docker/pull/17329), [#120078](https://github.com/docker/docker/pull/20078))
 
 ### Volumes
 
 * Output of `docker volume ls` is now sorted by volume name ([#20389](https://github.com/docker/docker/pull/20389))
 * Local volumes can now accepts options similar to the unix `mount` tool ([#20262](https://github.com/docker/docker/pull/20262))
+
 
 ### Builder
 
