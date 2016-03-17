@@ -85,6 +85,7 @@ _(last update: 2016/03/16 17:04, Commit: 2731dbc7977dba00405c974c47c4f079d441a2b
 
 ### Logging
 
+* The JSON Log driver got a speed boost ([#20605](https://github.com/docker/docker/pull/20605))
 * Docker syslog driver now uses the RFC-5424 format when emitting logs ([#20121](https://github.com/docker/docker/pull/20121)) 
 * Docker GELF log driver now allows to specify the compression algorithm and level via the `gelf-compression-type` and `gelf-compression-level` options ([#19831](https://github.com/docker/docker/pull/19831))
 * Docker daemon learned to output uncolorized logs via the `--raw-logs` options ([#19794](https://github.com/docker/docker/pull/19794))
