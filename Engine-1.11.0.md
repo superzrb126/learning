@@ -115,6 +115,7 @@ _(last update: 2016/03/16 17:04, Commit: 2731dbc7977dba00405c974c47c4f079d441a2b
 
 ### Security
 
+* `restart_syscall` joined the list of allowed calls in the default seccomp profile ([#21117](https://github.com/docker/docker/pull/21117))
 * `send`, `recv` and `x32` were added to the list of allowed syscalls and arch in the default seccomp profile ([#19432](https://github.com/docker/docker/pull/19432))
 
 ### Plugins
