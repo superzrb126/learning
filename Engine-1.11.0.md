@@ -60,6 +60,7 @@ _(last update: 2016/03/16 17:04, Commit: 2731dbc7977dba00405c974c47c4f079d441a2b
 ### Builder
 
 * Fix a bug where Docker would not used the correct uid/gid when processing the `WORKDIR` command ([#21033](https://github.com/docker/docker/pull/21033))
+* Fix a bug where copy operations would not use the proper uid/gid to create the parent directory ([#20782](https://github.com/docker/docker/pull/20782))
 
 ### Runtime
 
