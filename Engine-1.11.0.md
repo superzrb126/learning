@@ -68,6 +68,7 @@ _(last update: 2016/03/16 17:04)_
 * Docker now allows executing privileged container while running with `--userns-remap` if both `--privileged` and the new `--userns=host` flag are specified ([#20111](https://github.com/docker/docker/pull/20111))
 * Docker now supports external credential stores ([#20107](https://github.com/docker/docker/pull/20107))
 * Fix Docker not cleaning up correctly old containers upon restarting after a crash ([#19679](https://github.com/docker/docker/pull/19679))
+* Fix container loading, on daemon startup, when they depends on a plugin running within a container ([#19500](https://github.com/docker/docker/pull/19500))
 * Fix a panic that would occur when failing to load a layer on store instantiation ([#19458](https://github.com/docker/docker/pull/19458))
 * Fix a panic that occurred when a `exec` was started multiple times ([#19369](https://github.com/docker/docker/pull/19369)) 
 * `docker update` learned how to change a container restart policy ([#19116](https://github.com/docker/docker/pull/19116))
