@@ -62,6 +62,7 @@ _(last update: 2016/03/17 15:13, Commit: 0910946dc446ffa1f6264ca70f7382f16f798ce
 
 ### Logging
 
+- Fix a race in the journald log driver ([#21311](https://github.com/docker/docker/pull/21311))
 * The JSON Log driver got a speed boost ([#20605](https://github.com/docker/docker/pull/20605))
 * Docker syslog driver now uses the RFC-5424 format when emitting logs ([#20121](https://github.com/docker/docker/pull/20121)) 
 * Docker GELF log driver now allows to specify the compression algorithm and level via the `gelf-compression-type` and `gelf-compression-level` options ([#19831](https://github.com/docker/docker/pull/19831))
