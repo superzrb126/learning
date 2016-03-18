@@ -23,7 +23,7 @@ Bake plugin management capabilities inside docker.
 
 # WIP: Changelog
 
-_(last update: 2016/03/17 15:13, Commit: 0910946dc446ffa1f6264ca70f7382f16f798ce5)_
+_(last update: 2016/03/18 14:28, Commit: 6c6363c726ccfec97d577eff1cc60314f15dc841)_
 
 **IMPORTANT**: With Docker 1.11, a docker installation is now made of 4 binaries (`docker`, `containerd`, `containerd-shim` and `runc`). If you have scripts relying on docker being a single static binaries, please make sure to update them. Interaction with the daemon stay the same otherwise, the usage of the other binaries should be transparent.
 
@@ -34,6 +34,7 @@ _(last update: 2016/03/17 15:13, Commit: 0910946dc446ffa1f6264ca70f7382f16f798ce
 
 ### Client
 
+* Value passed to `--hostname` are now treated as FQDN ([#20200](https://github.com/docker/docker/pull/20200))
 - After a brief memory loss, Docker once more learned to report a container PID statistics ([#21150](https://github.com/docker/docker/pull/21150))
 * Docker info will now warn users if it can not detect the kernel version or the operating system ([#21128](https://github.com/docker/docker/pull/21128))
 - Fix a bug where credentials were retained after a user logging out ([#20860](https://github.com/docker/docker/pull/20860))
