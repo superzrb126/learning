@@ -74,6 +74,7 @@ _(last update: 2016/03/17 15:13, Commit: 0910946dc446ffa1f6264ca70f7382f16f798ce
 
 ### Misc
 
+* The `dockremap` is now created as a system user ([#21266](https://github.com/docker/docker/pull/21266)) 
 - Fix a few response body leaks ([#21258](https://github.com/docker/docker/pull/21258))
 - Docker, when run as a service with systemd, will now properly manage its processes cgroups ([#20633](https://github.com/docker/docker/pull/20633))
 * Docker info now reports the value of cgroup KernelMemory or emits a warning if it is not supported ([#20863](https://github.com/docker/docker/pull/20863))
