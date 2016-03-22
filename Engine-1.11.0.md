@@ -34,6 +34,7 @@ _(last update: 2016/03/18 14:28, Commit: 6c6363c726ccfec97d577eff1cc60314f15dc84
 
 ### Client
 
+* Usage of the `:` separator for security option has been deprecated. `=` should be used instead ([#21232](https://github.com/docker/docker/pull/21232)) 
 * Value passed to `--hostname` are now treated as FQDN ([#20200](https://github.com/docker/docker/pull/20200))
 - After a brief memory loss, Docker once more learned to report a container PID statistics ([#21150](https://github.com/docker/docker/pull/21150))
 * Docker info will now warn users if it can not detect the kernel version or the operating system ([#21128](https://github.com/docker/docker/pull/21128))
