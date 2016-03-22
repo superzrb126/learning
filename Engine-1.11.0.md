@@ -34,14 +34,17 @@ _(last update: 2016/03/21 22:51, Commit: d82ad12df813824d9166478068536d7d78cf0b6
 
 ### Client
 
-* Usage of the `:` separator for security option has been deprecated. `=` should be used instead ([#21232](https://github.com/docker/docker/pull/21232)) 
+* Usage of the `:` separator for security option has been deprecated. `=` should be used instead ([#21232](https://github.com/docker/docker/pull/21232))
++ The client user agent is now passed to the registry on image pulls ([#21306](https://github.com/docker/docker/pull/21306))
 * Value passed to `--hostname` are now treated as FQDN ([#20200](https://github.com/docker/docker/pull/20200))
 - After a brief memory loss, Docker once more learned to report a container PID statistics ([#21150](https://github.com/docker/docker/pull/21150))
 * Docker info will now warn users if it can not detect the kernel version or the operating system ([#21128](https://github.com/docker/docker/pull/21128))
+- Fix an issue where one letter directory name could not be used as source for volumes ([#21106](https://github.com/docker/docker/pull/21106))
 - Fix a bug where credentials were retained after a user logging out ([#20860](https://github.com/docker/docker/pull/20860))
 - Fix an issue where `docker stats --no-stream` output could be all 0s ([#20803](https://github.com/docker/docker/pull/20803))
 - Fix a bug where some newly started container would not appear in a running `docker stats` command ([#20792](https://github.com/docker/docker/pull/20792))
 * Post processing is no longer enabled for linux-cgo terminals ([#20587](https://github.com/docker/docker/pull/20587))
+- Values to `--hostname` are now refused if they do not comply with [RFC1123](https://tools.ietf.org/html/rfc1123) ([#20566](https://github.com/docker/docker/pull/20566))
 + Docker learned how to use a SOCKS proxy ([#20366](https://github.com/docker/docker/pull/20366), [#18373](https://github.com/docker/docker/pull/18373))
 * `docker ps` now supports displaying the list of volumes mounted inside a container ([#20017](https://github.com/docker/docker/pull/20017))
 * `docker info` now also report Docker's root directory location ([#19986](https://github.com/docker/docker/pull/19986))
