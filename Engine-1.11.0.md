@@ -71,8 +71,8 @@ _(last update: 2016/03/18 14:28, Commit: 6c6363c726ccfec97d577eff1cc60314f15dc84
 * Docker daemon learned to output uncolorized logs via the `--raw-logs` options ([#19794](https://github.com/docker/docker/pull/19794))
 + Docker, on Windows platform, now includes an ETW (Event Tracing in Windows) logging driver named `etwlogs` ([#19689](https://github.com/docker/docker/pull/19689))
 * Journald log driver learned how to handle tags ([#19564](https://github.com/docker/docker/pull/19564))
++ The fluentd log driver learned the following options: `fluentd-address`, `fluentd-buffer-limit`, `fluentd-retry-wait`, `fluentd-max-retries` and `fluentd-async-connect` ([#19439](https://github.com/docker/docker/pull/19439))
 + Docker learned to send log to Google Cloud via the new `gcplogs` logging driver. ([#18766](https://github.com/docker/docker/pull/18766))
-* The `fluentd` log driver learned to process the new `fail-on-startup-error` log option preventing it to fail a container startup if it can't connect to the backend ([#18041](https://github.com/docker/docker/pull/18041))
 
 
 ### Misc
@@ -105,6 +105,7 @@ _(last update: 2016/03/18 14:28, Commit: 6c6363c726ccfec97d577eff1cc60314f15dc84
 
 ### Runtime
 
+* Docker learned to report the faulty exe when a container cannot be started due to its condition ([#21345](https://github.com/docker/docker/pull/21345))
 * Docker with device mapper will now refuse to run if `udev sync` is not available ([#21097](https://github.com/docker/docker/pull/21097))
 - Fix a bug where Docker would not validate the config file upon configuration reload ([#21089](https://github.com/docker/docker/pull/21089))
 - Fix a hang that would happen on attach if initial start was to fail ([#21048](https://github.com/docker/docker/pull/21048))
@@ -141,4 +142,3 @@ _(last update: 2016/03/18 14:28, Commit: 6c6363c726ccfec97d577eff1cc60314f15dc84
 
 * Output of `docker volume ls` is now sorted by volume name ([#20389](https://github.com/docker/docker/pull/20389))
 * Local volumes can now accepts options similar to the unix `mount` tool ([#20262](https://github.com/docker/docker/pull/20262))
-
