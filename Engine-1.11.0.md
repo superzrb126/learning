@@ -77,6 +77,7 @@ _(last update: 2016/03/18 14:28, Commit: 6c6363c726ccfec97d577eff1cc60314f15dc84
 
 ### Misc
 
++ Support for building the Docker cli for OpenBSD was added ([#21325](https://github.com/docker/docker/pull/21325))
 * The `dockremap` is now created as a system user ([#21266](https://github.com/docker/docker/pull/21266)) 
 - Fix a few response body leaks ([#21258](https://github.com/docker/docker/pull/21258))
 - Docker, when run as a service with systemd, will now properly manage its processes cgroups ([#20633](https://github.com/docker/docker/pull/20633))
@@ -84,7 +85,7 @@ _(last update: 2016/03/18 14:28, Commit: 6c6363c726ccfec97d577eff1cc60314f15dc84
 * Docker info now also reports the cgroup driver in use ([#20388](https://github.com/docker/docker/pull/20388))
 * Docker completion is now available on PowerShell ([#19894](https://github.com/docker/docker/pull/19894))
 * `dockerinit` is no more ([#19490](https://github.com/docker/docker/pull/19490),[#19851](https://github.com/docker/docker/pull/19851))
-+ Support for building docker on arm64 was added ([#19013](https://github.com/docker/docker/pull/19013))
++ Support for building Docker on arm64 was added ([#19013](https://github.com/docker/docker/pull/19013))
 + Experimental support for building docker.exe in a native Windows Docker installation ([#18348](https://github.com/docker/docker/pull/18348))
 
 ### Networking
@@ -140,5 +141,4 @@ _(last update: 2016/03/18 14:28, Commit: 6c6363c726ccfec97d577eff1cc60314f15dc84
 
 * Output of `docker volume ls` is now sorted by volume name ([#20389](https://github.com/docker/docker/pull/20389))
 * Local volumes can now accepts options similar to the unix `mount` tool ([#20262](https://github.com/docker/docker/pull/20262))
-
 
