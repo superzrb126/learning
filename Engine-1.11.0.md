@@ -111,6 +111,7 @@ _(last update: 2016/03/21 22:51, Commit: d82ad12df813824d9166478068536d7d78cf0b6
 
 + Docker Windows gained a minimal `top` implementation ([#21354](https://github.com/docker/docker/pull/21354))
 * Docker learned to report the faulty exe when a container cannot be started due to its condition ([#21345](https://github.com/docker/docker/pull/21345))
++ `docker -v` now accepts a new flag `nocopy`. This tell the runtime not to copy the container path content into the volume (which is the default behavior) ([#21223](https://github.com/docker/docker/pull/21223))
 * Docker with device mapper will now refuse to run if `udev sync` is not available ([#21097](https://github.com/docker/docker/pull/21097))
 - Fix a bug where Docker would not validate the config file upon configuration reload ([#21089](https://github.com/docker/docker/pull/21089))
 - Fix a hang that would happen on attach if initial start was to fail ([#21048](https://github.com/docker/docker/pull/21048))
