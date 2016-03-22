@@ -23,7 +23,7 @@ Bake plugin management capabilities inside docker.
 
 # WIP: Changelog
 
-_(last update: 2016/03/22 13:36, Commit: de9ff4bdc0e17a0fd455790972d83133f424ef9d)_
+_(last update: 2016/03/22 15:34, Commit: 506fb9810c60177b360b9dabab516828b90ffc48)_
 
 **IMPORTANT**: With Docker 1.11, a docker installation is now made of 4 binaries (`docker`, `containerd`, `containerd-shim` and `runc`). If you have scripts relying on docker being a single static binaries, please make sure to update them. Interaction with the daemon stay the same otherwise, the usage of the other binaries should be transparent.
 
@@ -81,7 +81,9 @@ _(last update: 2016/03/22 13:36, Commit: de9ff4bdc0e17a0fd455790972d83133f424ef9
 
 ### Misc
 
++ When saving linked images together with `docker save` a subsequent `docker load` will correctly restore their parent/child relationship ([#21385](https://github.com/docker/docker/pull/c))
 + Support for building the Docker cli for OpenBSD was added ([#21325](https://github.com/docker/docker/pull/21325))
++ Labels can now be applied at network, volume and image creation ([#21270](https://github.com/docker/docker/pull/21270))
 * The `dockremap` is now created as a system user ([#21266](https://github.com/docker/docker/pull/21266)) 
 - Fix a few response body leaks ([#21258](https://github.com/docker/docker/pull/21258))
 - Docker, when run as a service with systemd, will now properly manage its processes cgroups ([#20633](https://github.com/docker/docker/pull/20633))
@@ -109,6 +111,7 @@ _(last update: 2016/03/22 13:36, Commit: de9ff4bdc0e17a0fd455790972d83133f424ef9
 
 ### Runtime
 
++ It is now possible for containers to share the NET and IPC namespaces when `userns` is enabled ([#21383](https://github.com/docker/docker/pull/21383)) 
 + Docker Windows gained a minimal `top` implementation ([#21354](https://github.com/docker/docker/pull/21354))
 * Docker learned to report the faulty exe when a container cannot be started due to its condition ([#21345](https://github.com/docker/docker/pull/21345))
 + `docker -v` now accepts a new flag `nocopy`. This tell the runtime not to copy the container path content into the volume (which is the default behavior) ([#21223](https://github.com/docker/docker/pull/21223))
