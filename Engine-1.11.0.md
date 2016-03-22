@@ -35,7 +35,7 @@ _(last update: 2016/03/21 22:51, Commit: d82ad12df813824d9166478068536d7d78cf0b6
 ### Client
 
 * Usage of the `:` separator for security option has been deprecated. `=` should be used instead ([#21232](https://github.com/docker/docker/pull/21232))
-+ The client user agent is now passed to the registry on image pulls ([#21306](https://github.com/docker/docker/pull/21306))
++ The client user agent is now passed to the registry on `pull`, `build`, `push`, `login` and `search` operations ([#21306](https://github.com/docker/docker/pull/21306), [#21373](https://github.com/docker/docker/pull/21373))
 * Value passed to `--hostname` are now treated as FQDN ([#20200](https://github.com/docker/docker/pull/20200))
 - After a brief memory loss, Docker once more learned to report a container PID statistics ([#21150](https://github.com/docker/docker/pull/21150))
 * Docker info will now warn users if it can not detect the kernel version or the operating system ([#21128](https://github.com/docker/docker/pull/21128))
@@ -58,6 +58,7 @@ _(last update: 2016/03/21 22:51, Commit: d82ad12df813824d9166478068536d7d78cf0b6
 
 - Fix a panic that occurred when pulling an images with 0 layers ([#21222](https://github.com/docker/docker/pull/21222))
 - Fix a panic that could occur on error while pushing to a registry with a misconfigured token service ([#21212](https://github.com/docker/docker/pull/21212))
++ All first-level delegation roles are now signed when doing a trusted push ([#21046](https://github.com/docker/docker/pull/21046)) 
 + OAuth support for registries was added ([#20970](https://github.com/docker/docker/pull/20970))
 * `docker login` now handles token using the implementation found in [docker/distribution](https://github.com/docker/distribution) ([#20832](https://github.com/docker/docker/pull/20832))
 * `docker login` will no longer prompt for an email ([#20565](https://github.com/docker/docker/pull/20565))
@@ -108,6 +109,7 @@ _(last update: 2016/03/21 22:51, Commit: d82ad12df813824d9166478068536d7d78cf0b6
 
 ### Runtime
 
++ Docker Windows gained a minimal `top` implementation ([#21354](https://github.com/docker/docker/pull/21354))
 * Docker learned to report the faulty exe when a container cannot be started due to its condition ([#21345](https://github.com/docker/docker/pull/21345))
 * Docker with device mapper will now refuse to run if `udev sync` is not available ([#21097](https://github.com/docker/docker/pull/21097))
 - Fix a bug where Docker would not validate the config file upon configuration reload ([#21089](https://github.com/docker/docker/pull/21089))
