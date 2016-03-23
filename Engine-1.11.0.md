@@ -25,7 +25,7 @@ Bake plugin management capabilities inside docker.
 
 _(last update: 2016/03/22 15:34, Commit: 506fb9810c60177b360b9dabab516828b90ffc48)_
 
-**IMPORTANT**: With Docker 1.11, a docker installation is now made of 4 binaries (`docker`, `containerd`, `containerd-shim` and `runc`). If you have scripts relying on docker being a single static binaries, please make sure to update them. Interaction with the daemon stay the same otherwise, the usage of the other binaries should be transparent.
+**IMPORTANT**: With Docker 1.11, a docker installation is now made of 4 binaries (`docker`, [`docker-containerd`](https://github.com/docker/containerd), [`docker-containerd-shim`](https://github.com/docker/containerd) and [`docker-runc`](https://github.com/opencontainers/runc)). If you have scripts relying on docker being a single static binaries, please make sure to update them. Interaction with the daemon stay the same otherwise, the usage of the other binaries should be transparent.
 
 ### Builder
 
