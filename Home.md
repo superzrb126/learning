@@ -11,6 +11,7 @@ Docker Engine roadmap items are filed on the issue tracker with the [`roadmap`](
 
 | Milestone        | Target date | Release captain | Goals |
 |------------------|-------------|-----------------|-------|
+| Docker 1.13.0    | 10/27/2016 (code freeze)  | **[@vieux](https://github.com/vieux)**             |       |
 | Docker 1.12.0    | 07/28/2016  | **[@vieux](https://github.com/vieux)**             |       |
 | Docker 1.11.0    | 04/12/2016  | **[@mlaventure](https://github.com/mlaventure)**              | [Engine 1.11.0](https://github.com/docker/docker/wiki/Engine-1.11.0) |
 | Docker 1.10.0    | 02/04/2016  | **[@thaJeztah](https://github.com/thaJeztah)**                | [Engine 1.10.0](https://github.com/docker/docker/wiki/Engine-1.10.0) |
