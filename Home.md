@@ -6,7 +6,7 @@ Even though the process is time-based, the Docker Engine sets short-term goals f
 
 # Roadmap
 
-Docker Engine roadmap items are filed on the issue tracker with the [`roadmap`](https://github.com/docker/docker/issues?q=is%3Aopen+is%3Aissue+label%3Aroadmap) label. They are open to community participation: join us on the [usual communication channels](https://github.com/docker/docker#talking-to-other-docker-users-and-contributors) to contribute!
+Docker Engine roadmap items are filed on the issue tracker with the [`roadmap`](https://github.com/docker/docker/issues?q=is%3Aopen+is%3Aissue+label%3Aroadmap) label. They are open to community participation: join us on the [usual communication channels](https://github.com/moby/moby/blob/master/CONTRIBUTING.md#connect-with-other-moby-project-contributors) to contribute!
 
 
 | Milestone         | Target date | Release captain                                    | Goals |
